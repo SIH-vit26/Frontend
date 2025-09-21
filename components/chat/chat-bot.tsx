@@ -1,11 +1,10 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
-import { ScrollArea } from "@/components/ui/scroll-area"
-import { MessageCircle, X, Send, Bot, User } from "lucide-react"
+import { MessageCircle, X, Send, Bot, User, Loader2 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 
 interface Message {
@@ -26,8 +25,36 @@ export function ChatBot() {
     },
   ])
   const [inputValue, setInputValue] = useState("")
+  const [isTyping, setIsTyping] = useState(false)
+  const scrollAreaRef = useRef<HTMLDivElement>(null)
+  const messagesEndRef = useRef<HTMLDivElement>(null)
+  const chatContainerRef = useRef<HTMLDivElement>(null)
 
-  const handleSendMessage = () => {
+  // Auto-scroll to bottom when new messages are added
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
+  }
+
+  useEffect(() => {
+    scrollToBottom()
+  }, [messages])
+
+  // Handle scroll events within chat container
+  useEffect(() => {
+    const handleWheel = (e: WheelEvent) => {
+      e.stopPropagation()
+    }
+
+    const chatContainer = chatContainerRef.current
+    if (chatContainer) {
+      chatContainer.addEventListener('wheel', handleWheel, { passive: false })
+      return () => {
+        chatContainer.removeEventListener('wheel', handleWheel)
+      }
+    }
+  }, [isOpen])
+
+  const handleSendMessage = async () => {
     if (!inputValue.trim()) return
 
     const userMessage: Message = {
@@ -39,17 +66,19 @@ export function ChatBot() {
 
     setMessages((prev) => [...prev, userMessage])
     setInputValue("")
+    setIsTyping(true)
 
-    // Simulate bot response
+    // Simulate bot response with loading state
     setTimeout(() => {
+      setIsTyping(false)
       const botResponse: Message = {
         id: (Date.now() + 1).toString(),
-        text: getBotResponse(inputValue),
+        text: getBotResponse(userMessage.text),
         sender: "bot",
         timestamp: new Date(),
       }
       setMessages((prev) => [...prev, botResponse])
-    }, 1000)
+    }, 1500)
   }
 
   const getBotResponse = (userInput: string): string => {
@@ -98,10 +127,10 @@ export function ChatBot() {
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            className="fixed bottom-24 right-6 z-50 w-80 h-96"
+            className="fixed bottom-24 right-6 z-50 w-80 max-w-[calc(100vw-3rem)] h-[32rem] max-h-[calc(100vh-8rem)] sm:w-96"
           >
-            <Card className="h-full shadow-2xl border-0 bg-white/95 backdrop-blur-sm">
-              <CardHeader className="bg-gradient-to-r from-indigo-600 to-emerald-600 text-white rounded-t-lg">
+            <Card className="h-full shadow-2xl border-0 bg-white/95 backdrop-blur-sm flex flex-col overflow-hidden">
+              <CardHeader className="bg-gradient-to-r from-indigo-600 to-emerald-600 text-white rounded-t-lg flex-shrink-0 p-4">
                 <div className="flex items-center justify-between">
                   <CardTitle className="text-lg flex items-center gap-2">
                     <Bot className="w-5 h-5" />
@@ -118,45 +147,91 @@ export function ChatBot() {
                 </div>
               </CardHeader>
 
-              <CardContent className="p-0 flex flex-col h-full">
-                <ScrollArea className="flex-1 p-4">
-                  <div className="space-y-4">
-                    {messages.map((message) => (
+              <CardContent 
+                className="p-0 flex flex-col flex-1 overflow-hidden min-h-0 chat-container"
+                ref={chatContainerRef}
+                onWheel={(e) => e.stopPropagation()}
+              >
+                <div 
+                  className="flex-1 overflow-y-auto overflow-x-hidden p-4 space-y-3"
+                  style={{ height: 'calc(100% - 80px)' }}
+                  ref={scrollAreaRef}
+                  onWheel={(e) => e.stopPropagation()}
+                >
+                  {messages.map((message) => (
+                    <motion.div
+                      key={message.id}
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className={`flex ${message.sender === "user" ? "justify-end" : "justify-start"}`}
+                    >
                       <div
-                        key={message.id}
-                        className={`flex ${message.sender === "user" ? "justify-end" : "justify-start"}`}
+                        className={`max-w-[80%] p-3 rounded-lg shadow-sm chat-message ${
+                          message.sender === "user"
+                            ? "bg-gradient-to-r from-indigo-600 to-emerald-600 text-white rounded-br-sm"
+                            : "bg-gray-100 text-gray-900 border border-gray-200 rounded-bl-sm"
+                        }`}
                       >
-                        <div
-                          className={`max-w-[80%] p-3 rounded-lg ${
-                            message.sender === "user"
-                              ? "bg-gradient-to-r from-indigo-600 to-emerald-600 text-white"
-                              : "bg-gray-100 text-gray-900"
-                          }`}
-                        >
-                          <div className="flex items-start gap-2">
-                            {message.sender === "bot" && <Bot className="w-4 h-4 mt-0.5 flex-shrink-0" />}
-                            {message.sender === "user" && <User className="w-4 h-4 mt-0.5 flex-shrink-0" />}
-                            <p className="text-sm">{message.text}</p>
+                        <div className="flex items-start gap-2">
+                          {message.sender === "bot" && <Bot className="w-4 h-4 mt-0.5 flex-shrink-0 text-indigo-600" />}
+                          {message.sender === "user" && <User className="w-4 h-4 mt-0.5 flex-shrink-0" />}
+                          <div className="flex-1 min-w-0">
+                            <p className="text-sm leading-relaxed whitespace-pre-wrap">{message.text}</p>
+                            <span className={`text-xs mt-1 block ${
+                              message.sender === "user" ? "text-white/70" : "text-gray-500"
+                            }`}>
+                              {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                            </span>
                           </div>
                         </div>
                       </div>
-                    ))}
-                  </div>
-                </ScrollArea>
+                    </motion.div>
+                  ))}
 
-                <div className="p-4 border-t">
+                  {/* Typing indicator */}
+                  {isTyping && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      className="flex justify-start"
+                    >
+                      <div className="max-w-[80%] p-3 rounded-lg shadow-sm bg-gray-100 text-gray-900 border border-gray-200 rounded-bl-sm">
+                        <div className="flex items-start gap-2">
+                          <Bot className="w-4 h-4 mt-0.5 flex-shrink-0 text-indigo-600" />
+                          <div className="flex items-center gap-1">
+                            <Loader2 className="w-4 h-4 animate-spin text-indigo-600" />
+                            <span className="text-sm text-gray-600">Typing...</span>
+                          </div>
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
+                  
+                  {/* Scroll anchor */}
+                  <div ref={messagesEndRef} />
+                </div>
+
+                <div className="p-4 border-t bg-white rounded-b-lg flex-shrink-0" style={{ height: '80px' }}>
                   <div className="flex gap-2">
                     <Input
                       value={inputValue}
                       onChange={(e) => setInputValue(e.target.value)}
                       placeholder="Ask me anything..."
-                      onKeyPress={(e) => e.key === "Enter" && handleSendMessage()}
-                      className="flex-1"
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter" && !e.shiftKey) {
+                          e.preventDefault()
+                          handleSendMessage()
+                        }
+                      }}
+                      disabled={isTyping}
+                      className="flex-1 focus:ring-2 focus:ring-indigo-500 border-gray-300"
                     />
                     <Button
                       onClick={handleSendMessage}
                       size="sm"
-                      className="bg-gradient-to-r from-indigo-600 to-emerald-600 hover:from-indigo-700 hover:to-emerald-700"
+                      disabled={!inputValue.trim() || isTyping}
+                      className="bg-gradient-to-r from-indigo-600 to-emerald-600 hover:from-indigo-700 hover:to-emerald-700 disabled:opacity-50"
                     >
                       <Send className="w-4 h-4" />
                     </Button>

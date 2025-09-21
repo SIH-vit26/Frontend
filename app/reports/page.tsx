@@ -21,6 +21,10 @@ import {
   DollarSign,
   Clock,
   Eye,
+  Filter,
+  Search,
+  RefreshCw,
+  Settings,
 } from "lucide-react"
 import { format } from "date-fns"
 
@@ -112,110 +116,149 @@ export default function ReportsPage() {
   const getStatusColor = (status: string) => {
     switch (status) {
       case "completed":
-        return "bg-green-100 text-green-800"
+        return "bg-gradient-to-r from-emerald-100 to-green-100 text-emerald-800 border-emerald-200"
       case "processing":
-        return "bg-yellow-100 text-yellow-800"
+        return "bg-gradient-to-r from-amber-100 to-yellow-100 text-amber-800 border-amber-200"
       case "failed":
-        return "bg-red-100 text-red-800"
+        return "bg-gradient-to-r from-red-100 to-rose-100 text-red-800 border-red-200"
       default:
-        return "bg-gray-100 text-gray-800"
+        return "bg-gradient-to-r from-slate-100 to-gray-100 text-slate-800 border-slate-200"
     }
   }
 
   return (
-    <div className="space-y-6">
-      <PageHeader
-        title="Reports"
-        description="Generate, schedule, and manage comprehensive reports and analytics"
-        action={
-          <Button>
-            <BarChart3 className="h-4 w-4 mr-2" />
-            Generate Report
-          </Button>
-        }
-      />
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+      <div className="space-y-8">
+        <PageHeader
+          title="Reports & Analytics"
+          description="Generate comprehensive reports, track analytics, and manage automated reporting schedules"
+        >
+          <div className="flex items-center gap-3">
+            <Button variant="outline" size="sm">
+              <Settings className="h-4 w-4 mr-2" />
+              Settings
+            </Button>
+            <Button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 shadow-lg">
+              <BarChart3 className="h-4 w-4 mr-2" />
+              Generate Report
+            </Button>
+          </div>
+        </PageHeader>
 
-      <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
-        <TabsList className="grid w-full grid-cols-3">
-          <TabsTrigger value="overview">Overview</TabsTrigger>
-          <TabsTrigger value="templates">Report Templates</TabsTrigger>
-          <TabsTrigger value="history">Report History</TabsTrigger>
-        </TabsList>
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-8">
+          <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-white/50">
+            <TabsList className="grid w-full grid-cols-3 bg-white/80 backdrop-blur-sm">
+              <TabsTrigger value="overview" className="data-[state=active]:bg-blue-600 data-[state=active]:text-white">
+                Overview
+              </TabsTrigger>
+              <TabsTrigger value="templates" className="data-[state=active]:bg-blue-600 data-[state=active]:text-white">
+                Report Templates
+              </TabsTrigger>
+              <TabsTrigger value="history" className="data-[state=active]:bg-blue-600 data-[state=active]:text-white">
+                Report History
+              </TabsTrigger>
+            </TabsList>
+          </div>
 
-        <TabsContent value="overview" className="space-y-6">
+        <TabsContent value="overview" className="space-y-8">
           {/* Quick Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <Card>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Card className="bg-white/70 backdrop-blur-sm border-white/50 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-sm font-medium text-muted-foreground">Total Reports</p>
-                    <p className="text-2xl font-bold">156</p>
+                    <p className="text-sm font-medium text-slate-600">Total Reports</p>
+                    <p className="text-3xl font-bold text-slate-800">156</p>
+                    <p className="text-xs text-emerald-600 font-medium mt-1">+12 this month</p>
                   </div>
-                  <FileText className="h-8 w-8 text-muted-foreground" />
+                  <div className="p-3 bg-blue-100 rounded-full">
+                    <FileText className="h-8 w-8 text-blue-600" />
+                  </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="bg-white/70 backdrop-blur-sm border-white/50 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-sm font-medium text-muted-foreground">This Month</p>
-                    <p className="text-2xl font-bold">23</p>
+                    <p className="text-sm font-medium text-slate-600">This Month</p>
+                    <p className="text-3xl font-bold text-slate-800">23</p>
+                    <p className="text-xs text-emerald-600 font-medium mt-1">+15% from last month</p>
                   </div>
-                  <TrendingUp className="h-8 w-8 text-green-500" />
+                  <div className="p-3 bg-emerald-100 rounded-full">
+                    <TrendingUp className="h-8 w-8 text-emerald-600" />
+                  </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="bg-white/70 backdrop-blur-sm border-white/50 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-sm font-medium text-muted-foreground">Scheduled</p>
-                    <p className="text-2xl font-bold">8</p>
+                    <p className="text-sm font-medium text-slate-600">Scheduled</p>
+                    <p className="text-3xl font-bold text-slate-800">8</p>
+                    <p className="text-xs text-blue-600 font-medium mt-1">Auto-generated</p>
                   </div>
-                  <Clock className="h-8 w-8 text-blue-500" />
+                  <div className="p-3 bg-amber-100 rounded-full">
+                    <Clock className="h-8 w-8 text-amber-600" />
+                  </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="bg-white/70 backdrop-blur-sm border-white/50 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-sm font-medium text-muted-foreground">Downloads</p>
-                    <p className="text-2xl font-bold">1.2K</p>
+                    <p className="text-sm font-medium text-slate-600">Total Downloads</p>
+                    <p className="text-3xl font-bold text-slate-800">1.2K</p>
+                    <p className="text-xs text-purple-600 font-medium mt-1">+8% this week</p>
                   </div>
-                  <Download className="h-8 w-8 text-purple-500" />
+                  <div className="p-3 bg-purple-100 rounded-full">
+                    <Download className="h-8 w-8 text-purple-600" />
+                  </div>
                 </div>
               </CardContent>
             </Card>
           </div>
 
           {/* Recent Reports */}
-          <Card>
-            <CardHeader>
-              <CardTitle>Recent Reports</CardTitle>
-              <CardDescription>Latest generated reports and their status</CardDescription>
+          <Card className="bg-white/70 backdrop-blur-sm border-white/50 shadow-lg">
+            <CardHeader className="border-b border-slate-200/50">
+              <div className="flex items-center justify-between">
+                <div>
+                  <CardTitle className="text-xl text-slate-800">Recent Reports</CardTitle>
+                  <CardDescription className="text-slate-600">Latest generated reports and their status</CardDescription>
+                </div>
+                <Button variant="outline" size="sm" className="border-slate-300">
+                  <RefreshCw className="h-4 w-4 mr-2" />
+                  Refresh
+                </Button>
+              </div>
             </CardHeader>
-            <CardContent>
+            <CardContent className="p-6">
               <div className="space-y-4">
                 {recentReports.map((report) => (
-                  <div key={report.id} className="flex items-center justify-between p-4 border rounded-lg">
-                    <div>
-                      <h4 className="font-medium">{report.name}</h4>
-                      <p className="text-sm text-muted-foreground">
+                  <div key={report.id} className="flex items-center justify-between p-6 border border-slate-200/50 rounded-xl bg-white/50 hover:bg-white/80 transition-all duration-200 hover:shadow-md">
+                    <div className="flex-1">
+                      <h4 className="font-semibold text-slate-800 mb-1">{report.name}</h4>
+                      <p className="text-sm text-slate-600">
                         {report.type} • Generated {report.generatedAt} • {report.size}
                       </p>
                     </div>
-                    <div className="flex items-center space-x-3">
-                      <Badge className={getStatusColor(report.status)}>{report.status}</Badge>
-                      <span className="text-sm text-muted-foreground">{report.downloads} downloads</span>
-                      <Button variant="ghost" size="sm">
-                        <Download className="h-4 w-4" />
-                      </Button>
+                    <div className="flex items-center space-x-4">
+                      <Badge className={`${getStatusColor(report.status)} font-medium`}>{report.status}</Badge>
+                      <span className="text-sm text-slate-600 font-medium">{report.downloads} downloads</span>
+                      <div className="flex items-center space-x-2">
+                        <Button variant="ghost" size="sm" className="hover:bg-blue-50 hover:text-blue-600">
+                          <Eye className="h-4 w-4" />
+                        </Button>
+                        <Button variant="ghost" size="sm" className="hover:bg-green-50 hover:text-green-600">
+                          <Download className="h-4 w-4" />
+                        </Button>
+                      </div>
                     </div>
                   </div>
                 ))}
@@ -224,43 +267,52 @@ export default function ReportsPage() {
           </Card>
         </TabsContent>
 
-        <TabsContent value="templates" className="space-y-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <TabsContent value="templates" className="space-y-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
             {reportTypes.map((reportType) => {
               const Icon = reportType.icon
               return (
-                <Card key={reportType.id}>
-                  <CardHeader>
+                <Card key={reportType.id} className="bg-white/70 backdrop-blur-sm border-white/50 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group">
+                  <CardHeader className="pb-3">
                     <div className="flex items-start justify-between">
-                      <div className="flex items-center space-x-3">
-                        <Icon className="h-6 w-6 text-muted-foreground" />
+                      <div className="flex items-center space-x-4">
+                        <div className="p-3 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-xl group-hover:from-blue-200 group-hover:to-indigo-200 transition-colors">
+                          <Icon className="h-7 w-7 text-blue-600" />
+                        </div>
                         <div>
-                          <CardTitle className="text-lg">{reportType.name}</CardTitle>
-                          <CardDescription>{reportType.description}</CardDescription>
+                          <CardTitle className="text-lg text-slate-800 mb-1">{reportType.name}</CardTitle>
+                          <CardDescription className="text-slate-600 text-sm leading-relaxed">
+                            {reportType.description}
+                          </CardDescription>
                         </div>
                       </div>
                     </div>
                   </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="flex items-center justify-between text-sm">
-                      <span className="text-muted-foreground">Frequency:</span>
-                      <span>{reportType.frequency}</span>
+                  <CardContent className="space-y-4 pt-0">
+                    <div className="grid grid-cols-2 gap-4 text-sm">
+                      <div className="bg-slate-50/80 rounded-lg p-3">
+                        <span className="text-slate-500 block mb-1">Frequency</span>
+                        <span className="font-semibold text-slate-800">{reportType.frequency}</span>
+                      </div>
+                      <div className="bg-slate-50/80 rounded-lg p-3">
+                        <span className="text-slate-500 block mb-1">Recipients</span>
+                        <span className="font-semibold text-slate-800">{reportType.recipients} users</span>
+                      </div>
                     </div>
-                    <div className="flex items-center justify-between text-sm">
-                      <span className="text-muted-foreground">Recipients:</span>
-                      <span>{reportType.recipients} users</span>
+                    <div className="bg-slate-50/80 rounded-lg p-3">
+                      <span className="text-slate-500 text-sm block mb-1">Last Generated</span>
+                      <span className="font-semibold text-slate-800">{reportType.lastGenerated}</span>
                     </div>
-                    <div className="flex items-center justify-between text-sm">
-                      <span className="text-muted-foreground">Last Generated:</span>
-                      <span>{reportType.lastGenerated}</span>
-                    </div>
-                    <div className="flex items-center space-x-2 pt-2 border-t">
-                      <Button size="sm" className="flex-1">
+                    <div className="flex items-center space-x-3 pt-4 border-t border-slate-200/50">
+                      <Button size="sm" className="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 shadow-md">
                         <BarChart3 className="h-4 w-4 mr-2" />
                         Generate Now
                       </Button>
-                      <Button variant="outline" size="sm">
+                      <Button variant="outline" size="sm" className="border-slate-300 hover:bg-slate-50">
                         <Eye className="h-4 w-4" />
+                      </Button>
+                      <Button variant="outline" size="sm" className="border-slate-300 hover:bg-slate-50">
+                        <Settings className="h-4 w-4" />
                       </Button>
                     </div>
                   </CardContent>
@@ -270,66 +322,98 @@ export default function ReportsPage() {
           </div>
         </TabsContent>
 
-        <TabsContent value="history" className="space-y-6">
+        <TabsContent value="history" className="space-y-8">
           {/* Filters */}
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Input placeholder="Search reports..." className="flex-1" />
-            <Select defaultValue="all">
-              <SelectTrigger className="w-full sm:w-48">
-                <SelectValue placeholder="Filter by type" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All Types</SelectItem>
-                <SelectItem value="risk">Risk Reports</SelectItem>
-                <SelectItem value="attendance">Attendance Reports</SelectItem>
-                <SelectItem value="performance">Performance Reports</SelectItem>
-                <SelectItem value="compliance">Compliance Reports</SelectItem>
-              </SelectContent>
-            </Select>
-            <Popover>
-              <PopoverTrigger asChild>
-                <Button variant="outline" className="w-full sm:w-auto bg-transparent">
-                  <CalendarIcon className="h-4 w-4 mr-2" />
-                  {dateRange.from && dateRange.to
-                    ? `${format(dateRange.from, "MMM dd")} - ${format(dateRange.to, "MMM dd")}`
-                    : "Select dates"}
+          <Card className="bg-white/70 backdrop-blur-sm border-white/50 shadow-lg">
+            <CardContent className="p-6">
+              <div className="flex flex-col lg:flex-row gap-4">
+                <div className="relative flex-1">
+                  <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-slate-400" />
+                  <Input 
+                    placeholder="Search reports by name, type, or content..." 
+                    className="pl-10 bg-white/80 border-slate-300 focus:border-blue-500 focus:ring-blue-500" 
+                  />
+                </div>
+                <Select defaultValue="all">
+                  <SelectTrigger className="w-full lg:w-48 bg-white/80 border-slate-300">
+                    <SelectValue placeholder="Filter by type" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="all">All Types</SelectItem>
+                    <SelectItem value="risk">Risk Reports</SelectItem>
+                    <SelectItem value="attendance">Attendance Reports</SelectItem>
+                    <SelectItem value="performance">Performance Reports</SelectItem>
+                    <SelectItem value="compliance">Compliance Reports</SelectItem>
+                  </SelectContent>
+                </Select>
+                <Popover>
+                  <PopoverTrigger asChild>
+                    <Button variant="outline" className="w-full lg:w-auto bg-white/80 border-slate-300 hover:bg-white">
+                      <CalendarIcon className="h-4 w-4 mr-2" />
+                      {dateRange.from && dateRange.to
+                        ? `${format(dateRange.from, "MMM dd")} - ${format(dateRange.to, "MMM dd")}`
+                        : "Select dates"}
+                    </Button>
+                  </PopoverTrigger>
+                  <PopoverContent className="w-auto p-0" align="start">
+                    <Calendar
+                      mode="range"
+                      selected={{ from: dateRange.from, to: dateRange.to }}
+                      onSelect={(range) => range && setDateRange(range as { from: Date; to: Date })}
+                      numberOfMonths={2}
+                    />
+                  </PopoverContent>
+                </Popover>
+                <Button variant="outline" className="lg:w-auto bg-white/80 border-slate-300 hover:bg-white">
+                  <Filter className="h-4 w-4 mr-2" />
+                  More Filters
                 </Button>
-              </PopoverTrigger>
-              <PopoverContent className="w-auto p-0" align="start">
-                <Calendar
-                  mode="range"
-                  selected={{ from: dateRange.from, to: dateRange.to }}
-                  onSelect={(range) => range && setDateRange(range as { from: Date; to: Date })}
-                  numberOfMonths={2}
-                />
-              </PopoverContent>
-            </Popover>
-          </div>
+              </div>
+            </CardContent>
+          </Card>
 
-          {/* Reports History Table */}
-          <Card>
-            <CardHeader>
-              <CardTitle>Report History</CardTitle>
-              <CardDescription>Complete history of all generated reports</CardDescription>
+          {/* Reports History */}
+          <Card className="bg-white/70 backdrop-blur-sm border-white/50 shadow-lg">
+            <CardHeader className="border-b border-slate-200/50">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <div>
+                  <CardTitle className="text-xl text-slate-800">Report History</CardTitle>
+                  <CardDescription className="text-slate-600">Complete history of all generated reports</CardDescription>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Button variant="outline" size="sm" className="border-slate-300">
+                    <RefreshCw className="h-4 w-4 mr-2" />
+                    Refresh
+                  </Button>
+                  <Button variant="outline" size="sm" className="border-slate-300">
+                    <Download className="h-4 w-4 mr-2" />
+                    Export All
+                  </Button>
+                </div>
+              </div>
             </CardHeader>
-            <CardContent>
+            <CardContent className="p-6">
               <div className="space-y-4">
                 {recentReports.map((report) => (
-                  <div key={report.id} className="flex items-center justify-between p-4 border rounded-lg">
-                    <div>
-                      <h4 className="font-medium">{report.name}</h4>
-                      <p className="text-sm text-muted-foreground">
+                  <div key={report.id} className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-6 border border-slate-200/50 rounded-xl bg-white/50 hover:bg-white/80 transition-all duration-200 hover:shadow-md gap-4">
+                    <div className="flex-1">
+                      <h4 className="font-semibold text-slate-800 mb-1">{report.name}</h4>
+                      <p className="text-sm text-slate-600">
                         Generated on {report.generatedAt} • {report.size}
                       </p>
                     </div>
-                    <div className="flex items-center space-x-3">
-                      <Badge className={getStatusColor(report.status)}>{report.status}</Badge>
-                      <span className="text-sm text-muted-foreground">{report.downloads} downloads</span>
-                      <div className="flex items-center space-x-1">
-                        <Button variant="ghost" size="sm">
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 w-full sm:w-auto">
+                      <Badge className={`${getStatusColor(report.status)} font-medium whitespace-nowrap`}>
+                        {report.status}
+                      </Badge>
+                      <span className="text-sm text-slate-600 font-medium whitespace-nowrap">
+                        {report.downloads} downloads
+                      </span>
+                      <div className="flex items-center space-x-2">
+                        <Button variant="ghost" size="sm" className="hover:bg-blue-50 hover:text-blue-600">
                           <Eye className="h-4 w-4" />
                         </Button>
-                        <Button variant="ghost" size="sm">
+                        <Button variant="ghost" size="sm" className="hover:bg-green-50 hover:text-green-600">
                           <Download className="h-4 w-4" />
                         </Button>
                       </div>
@@ -341,6 +425,7 @@ export default function ReportsPage() {
           </Card>
         </TabsContent>
       </Tabs>
+      </div>
     </div>
   )
 }

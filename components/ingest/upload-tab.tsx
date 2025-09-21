@@ -26,40 +26,49 @@ export function UploadTab() {
   const [lastRefresh, setLastRefresh] = useState<Date | null>(null)
   const { toast } = useToast()
 
-  const handleFileUpload = (type: keyof UploadStatus, file: File) => {
-    // Simulate file processing
-    const mockRows = Math.floor(Math.random() * 500) + 100
-    const mockIssues = []
-
-    // Add some realistic validation issues
-    if (Math.random() > 0.7) {
-      mockIssues.push("3 rows with missing student_id")
+  const handleFileUpload = async (type: keyof UploadStatus, file: File) => {
+    try {
+      const formData = new FormData()
+      formData.append("file", file)
+      formData.append("type", type) 
+  
+      const response = await fetch("/api/upload", {  
+        method: "POST",
+        body: formData,
+      })
+  
+      if (!response.ok) {
+        throw new Error(`Upload failed with status: ${response.status}`)
+      }
+  
+      const result = await response.json()
+      
+      setUploadStatus((prev) => ({
+        ...prev,
+        [type]: {
+          uploaded: true,
+          rows: result.rowsProcessed || 0,
+          issues: result.issues || [],
+        },
+      }))
+  
+      toast({
+        title: "File uploaded successfully",
+        description: `${file.name} processed with ${result.rowsProcessed || "unknown"} rows`,
+      })
+    } catch (error) {
+      toast({
+        title: "File upload failed",
+        description: String(error),
+        variant: "destructive",
+      })
     }
-    if (Math.random() > 0.8) {
-      mockIssues.push("2 duplicate entries found")
-    }
-    if (Math.random() > 0.9) {
-      mockIssues.push("1 invalid date format")
-    }
-
-    setUploadStatus((prev) => ({
-      ...prev,
-      [type]: {
-        uploaded: true,
-        rows: mockRows,
-        issues: mockIssues,
-      },
-    }))
-
-    toast({
-      title: "File uploaded successfully",
-      description: `${file.name} processed with ${mockRows} rows`,
-    })
   }
+  
 
   const handleMergeAndRefresh = async () => {
     setIsMerging(true)
-    // Simulate merge process
+    
     await new Promise((resolve) => setTimeout(resolve, 3000))
     setLastRefresh(new Date())
     setIsMerging(false)
@@ -76,7 +85,7 @@ export function UploadTab() {
 
   return (
     <div className="space-y-6">
-      {/* Upload Status Summary */}
+      
       {allFilesUploaded && (
         <Alert>
           <CheckCircle className="h-4 w-4" />

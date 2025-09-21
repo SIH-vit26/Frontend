@@ -12,12 +12,23 @@ import { Calendar, Users, AlertTriangle, CheckCircle, DollarSign, GraduationCap,
 import { useDashboardStore } from "@/lib/stores/dashboard-store"
 import { useStudentStore } from "@/lib/stores/student-store"
 import type { Student } from "@/lib/types"
+import { useEffect } from "react"
+
+
 
 export default function DashboardPage() {
   const [selectedStudent, setSelectedStudent] = useState<Student | null>(null)
   const [showWhatIf, setShowWhatIf] = useState(false)
-  const { stats } = useDashboardStore()
+  
   const { students } = useStudentStore()
+  const { stats, fetchDashboardData } = useDashboardStore()
+  useEffect(() => {
+    fetchDashboardData()
+  }, [fetchDashboardData])
+
+  if (!stats) {
+    return <div>Loading dashboard data...</div>
+  }
 
   const topAtRiskStudents = students
     .filter((s) => s.riskLevel === "red")

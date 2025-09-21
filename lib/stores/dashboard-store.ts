@@ -12,10 +12,11 @@ interface DashboardStats {
 }
 
 interface DashboardState {
-  stats: DashboardStats
-  thresholds: RiskThresholds
+  stats: DashboardStats | null
+  thresholds: RiskThresholds | null
   updateThresholds: (newThresholds: Partial<RiskThresholds>) => void
   resetThresholds: () => void
+  fetchDashboardData: () => Promise<void>
 }
 
 const defaultThresholds: RiskThresholds = {
@@ -39,29 +40,63 @@ const defaultStats: DashboardStats = {
 }
 
 export const useDashboardStore = create<DashboardState>((set) => ({
-  stats: defaultStats,
-  thresholds: defaultThresholds,
+  stats: null,
+  thresholds: null,
+
   updateThresholds: (newThresholds) =>
     set((state) => ({
-      thresholds: { ...state.thresholds, ...newThresholds },
-      // Simulate stats update based on threshold changes
-      stats: {
-        ...state.stats,
-        redCount: Math.max(
-          0,
-          state.stats.redCount +
-            (newThresholds.attendanceMinimum ? (newThresholds.attendanceMinimum > 75 ? 2 : -2) : 0),
-        ),
-        greenCount: Math.min(
-          180,
-          state.stats.greenCount +
-            (newThresholds.attendanceMinimum ? (newThresholds.attendanceMinimum > 75 ? -2 : 2) : 0),
-        ),
-      },
+      thresholds: state.thresholds
+        ? { ...state.thresholds, ...newThresholds }
+        : newThresholds as RiskThresholds,
+      stats: state.stats
+        ? {
+            ...state.stats,
+            redCount: Math.max(
+              0,
+              state.stats.redCount +
+                (newThresholds.attendanceMinimum
+                  ? newThresholds.attendanceMinimum > 75
+                    ? 2
+                    : -2
+                  : 0),
+            ),
+            greenCount: Math.min(
+              180,
+              state.stats.greenCount +
+                (newThresholds.attendanceMinimum
+                  ? newThresholds.attendanceMinimum > 75
+                    ? -2
+                    : 2
+                  : 0),
+            ),
+          }
+        : null,
     })),
+
   resetThresholds: () =>
     set({
       thresholds: defaultThresholds,
       stats: defaultStats,
     }),
+
+  fetchDashboardData: async () => {
+    try {
+      const res = await fetch("/api/dashboard-data") 
+      if (!res.ok) {
+        throw new Error(`API error: ${res.status}`)
+      }
+      const data = await res.json()
+      set({
+        stats: data.stats,
+        thresholds: data.thresholds,
+        
+      })
+    } catch (error) {
+      console.error("Failed to fetch dashboard data", error)
+      set({
+        stats: defaultStats,
+        thresholds: defaultThresholds,
+      })
+    }
+  },
 }))

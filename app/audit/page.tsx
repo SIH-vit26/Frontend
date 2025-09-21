@@ -136,17 +136,16 @@ export default function AuditPage() {
   })
 
   return (
-    <div className="space-y-6">
+    <>
       <PageHeader
         title="Audit & Compliance"
         description="Monitor system activity, track data access, and ensure DPDP compliance"
-        action={
-          <Button>
-            <Download className="h-4 w-4 mr-2" />
-            Export Audit Log
-          </Button>
-        }
-      />
+      >
+        <Button>
+          <Download className="h-4 w-4 mr-2" />
+          Export Audit Log
+        </Button>
+      </PageHeader>
 
       <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
         <TabsList className="grid w-full grid-cols-3">
@@ -258,6 +257,6 @@ export default function AuditPage() {
           <ComplianceReport />
         </TabsContent>
       </Tabs>
-    </div>
+    </>
   )
 }

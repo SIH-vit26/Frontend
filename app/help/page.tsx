@@ -159,7 +159,7 @@ export default function HelpPage() {
     .filter((category) => category.faqs.length > 0)
 
   return (
-    <div className="space-y-6">
+    <>
       <PageHeader title="Help & Support" description="Find answers, tutorials, and get support for EduEWS" />
 
       {/* Quick Links */}
@@ -416,6 +416,6 @@ export default function HelpPage() {
           </Card>
         </TabsContent>
       </Tabs>
-    </div>
+    </>
   )
 }

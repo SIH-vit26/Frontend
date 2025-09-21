@@ -101,7 +101,7 @@ export function RiskHeatmap() {
                     <div className="flex items-center font-medium text-sm">{cohort}</div>
                     {weeks.map((week) => {
                       const cellData = getCellData(cohort, week)
-                      if (!cellData) return <div key={week} className="h-12 bg-gray-100 rounded border" />
+                      if (!cellData) return <div key={week} className="h-12 bg-gray-100 dark:bg-gray-800 rounded border dark:border-gray-700" />
 
                       return (
                         <Tooltip key={week}>

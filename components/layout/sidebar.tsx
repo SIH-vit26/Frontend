@@ -15,12 +15,14 @@ import {
   HelpCircle,
   GraduationCap,
   Home,
+  BookOpen,
 } from "lucide-react"
 
 const navigation = [
   { name: "Home", href: "/dashboard", icon: Home },
   { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
   { name: "Students", href: "/students", icon: Users },
+  { name: "Study Planner", href: "/study-planner", icon: BookOpen },
   { name: "Data Ingestion", href: "/ingest", icon: Upload },
   { name: "Notifications", href: "/notifications", icon: Bell },
   { name: "Reports", href: "/reports", icon: FileText },

@@ -52,28 +52,32 @@ export default function StudyPlannerPage() {
   const { toast } = useToast()
 
   const handleSendPlan = async () => {
-    if (!parentEmail || !subject || !message) {
-      toast({
-        title: "Missing Information",
-        description: "Please fill in all fields before sending.",
-        variant: "destructive",
-      })
-      return
-    }
+  if (!parentEmail || !subject || !message) {
+    toast({
+      title: "Missing Information",
+      description: "Please fill in all fields before sending.",
+      variant: "destructive",
+    })
+    return
+  }
 
-    if (!parentEmail.includes("@gmail.com")) {
-      toast({
-        title: "Invalid Email",
-        description: "Please enter a valid Gmail address.",
-        variant: "destructive",
-      })
-      return
-    }
+  setIsLoading(true)
 
-    setIsLoading(true)
+  try {
+    const res = await fetch("http://127.0.0.1:8000/studyplan", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        comments: message,
+        email: parentEmail,
+      }),
+    })
 
-    // Simulate API call
-    setTimeout(() => {
+    const data = await res.json()
+
+    if (res.ok) {
       const newPlan: StudyPlan = {
         id: Date.now().toString(),
         studentEmail: "current-student@school.edu",
@@ -86,18 +90,32 @@ export default function StudyPlannerPage() {
 
       setStudyPlans((prev) => [newPlan, ...prev])
 
-      // Reset form
       setParentEmail("")
       setSubject("")
       setMessage("")
-      setIsLoading(false)
 
       toast({
         title: "Study Plan Sent!",
         description: `Successfully sent study plan to ${parentEmail}`,
       })
-    }, 2000)
+    } else {
+      toast({
+        title: "Error",
+        description: data.error || "Failed to send study plan",
+        variant: "destructive",
+      })
+    }
+  } catch (err) {
+    toast({
+      title: "Network Error",
+      description: "Could not reach the backend",
+      variant: "destructive",
+    })
+  } finally {
+    setIsLoading(false)
   }
+}
+
 
   const getStatusIcon = (status: StudyPlan["status"]) => {
     switch (status) {

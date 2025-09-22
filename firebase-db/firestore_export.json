@@ -1,0 +1,2210 @@
+{
+  "1": {
+    "id": "1",
+    "first_name": "Yutika",
+    "last_name": "Sagar",
+    "email": "yutika.sagar@example.com",
+    "gender": "Female",
+    "math_score": "26",
+    "physics_score": "97",
+    "chemistry_score": "74",
+    "path_time_job": "Yes",
+    "absence_days": "51",
+    "extracurricular_activities": "Yes",
+    "weekly_self_study_hours": "15",
+    "career_aspiration": "Doctor",
+    "fee_paid": "56130",
+    "fee_pending": "43870",
+    "fee_due_date": "2025-07-18",
+    "debar_risk": "Low Attendance",
+    "updated_at": {
+      "_seconds": 1758458176,
+      "_nanoseconds": 829000000
+    },
+    "created_at": {
+      "_seconds": 1758458176,
+      "_nanoseconds": 829000000
+    },
+    "marks": {
+      "OzCRgQZLbkG9bOw7j4y5": {
+        "id": "1",
+        "first_name": "Yutika",
+        "last_name": "Sagar",
+        "math_score": "26",
+        "physics_score": "97",
+        "chemistry_score": "74",
+        "debar_risk": "Low Attendance",
+        "created_at": {
+          "_seconds": 1758458185,
+          "_nanoseconds": 69000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "2": {
+    "id": "2",
+    "first_name": "Charles",
+    "last_name": "Barad",
+    "email": "charles.barad@example.com",
+    "gender": "Male",
+    "math_score": "92",
+    "physics_score": "27",
+    "chemistry_score": "100",
+    "path_time_job": "Yes",
+    "absence_days": "61",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "1",
+    "career_aspiration": "Artist",
+    "fee_paid": "95088",
+    "fee_pending": "4912",
+    "fee_due_date": "2025-06-26",
+    "debar_risk": "Low Attendance",
+    "updated_at": {
+      "_seconds": 1758458177,
+      "_nanoseconds": 35000000
+    },
+    "created_at": {
+      "_seconds": 1758458177,
+      "_nanoseconds": 35000000
+    },
+    "marks": {
+      "t1Cvght4Nd4Zr9dqgxbJ": {
+        "id": "2",
+        "first_name": "Charles",
+        "last_name": "Barad",
+        "math_score": "92",
+        "physics_score": "27",
+        "chemistry_score": "100",
+        "debar_risk": "Low Attendance",
+        "created_at": {
+          "_seconds": 1758458185,
+          "_nanoseconds": 134000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "3": {
+    "id": "3",
+    "first_name": "Pranav",
+    "last_name": "Bala",
+    "email": "pranav.bala@example.com",
+    "gender": "Male",
+    "math_score": "93",
+    "physics_score": "22",
+    "chemistry_score": "55",
+    "path_time_job": "No",
+    "absence_days": "74",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "30",
+    "career_aspiration": "Teacher",
+    "fee_paid": "26264",
+    "fee_pending": "73736",
+    "fee_due_date": "2025-05-23",
+    "debar_risk": "Low Attendance, Fee Default, Admin Debar",
+    "updated_at": {
+      "_seconds": 1758458177,
+      "_nanoseconds": 219000000
+    },
+    "created_at": {
+      "_seconds": 1758458177,
+      "_nanoseconds": 219000000
+    },
+    "marks": {
+      "KCDpldOucIkhr8ZrgQ3N": {
+        "id": "3",
+        "first_name": "Pranav",
+        "last_name": "Bala",
+        "math_score": "93",
+        "physics_score": "22",
+        "chemistry_score": "55",
+        "debar_risk": "Low Attendance, Fee Default, Admin Debar",
+        "created_at": {
+          "_seconds": 1758458185,
+          "_nanoseconds": 198000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "4": {
+    "id": "4",
+    "first_name": "Joshua",
+    "last_name": "Batra",
+    "email": "joshua.batra@example.com",
+    "gender": "Female",
+    "math_score": "43",
+    "physics_score": "32",
+    "chemistry_score": "66",
+    "path_time_job": "No",
+    "absence_days": "74",
+    "extracurricular_activities": "Yes",
+    "weekly_self_study_hours": "15",
+    "career_aspiration": "Teacher",
+    "fee_paid": "65516",
+    "fee_pending": "34484",
+    "fee_due_date": "2025-05-15",
+    "debar_risk": "Low Attendance",
+    "updated_at": {
+      "_seconds": 1758458177,
+      "_nanoseconds": 318000000
+    },
+    "created_at": {
+      "_seconds": 1758458177,
+      "_nanoseconds": 318000000
+    },
+    "marks": {
+      "ncVN8dEmWB9vWHAnHyXI": {
+        "id": "4",
+        "first_name": "Joshua",
+        "last_name": "Batra",
+        "math_score": "43",
+        "physics_score": "32",
+        "chemistry_score": "66",
+        "debar_risk": "Low Attendance",
+        "created_at": {
+          "_seconds": 1758458185,
+          "_nanoseconds": 264000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "5": {
+    "id": "5",
+    "first_name": "Bhavna",
+    "last_name": "Nadig",
+    "email": "bhavna.nadig@example.com",
+    "gender": "Male",
+    "math_score": "36",
+    "physics_score": "52",
+    "chemistry_score": "58",
+    "path_time_job": "Yes",
+    "absence_days": "48",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "21",
+    "career_aspiration": "Entrepreneur",
+    "fee_paid": "81664",
+    "fee_pending": "18336",
+    "fee_due_date": "2025-12-18",
+    "debar_risk": "Low Attendance",
+    "updated_at": {
+      "_seconds": 1758458177,
+      "_nanoseconds": 444000000
+    },
+    "created_at": {
+      "_seconds": 1758458177,
+      "_nanoseconds": 444000000
+    },
+    "marks": {
+      "KRIwN9pfozOEpH0YJu24": {
+        "id": "5",
+        "first_name": "Bhavna",
+        "last_name": "Nadig",
+        "math_score": "36",
+        "physics_score": "52",
+        "chemistry_score": "58",
+        "debar_risk": "Low Attendance",
+        "created_at": {
+          "_seconds": 1758458185,
+          "_nanoseconds": 331000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "6": {
+    "id": "6",
+    "first_name": "Indali",
+    "last_name": "Hayre",
+    "email": "indali.hayre@example.com",
+    "gender": "Female",
+    "math_score": "90",
+    "physics_score": "99",
+    "chemistry_score": "42",
+    "path_time_job": "Yes",
+    "absence_days": "51",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "17",
+    "career_aspiration": "Doctor",
+    "fee_paid": "52511",
+    "fee_pending": "47489",
+    "fee_due_date": "2025-05-31",
+    "debar_risk": "Low Attendance",
+    "updated_at": {
+      "_seconds": 1758458177,
+      "_nanoseconds": 657000000
+    },
+    "created_at": {
+      "_seconds": 1758458177,
+      "_nanoseconds": 657000000
+    },
+    "marks": {
+      "xufPjP8zcZdiUskRvDXa": {
+        "id": "6",
+        "first_name": "Indali",
+        "last_name": "Hayre",
+        "math_score": "90",
+        "physics_score": "99",
+        "chemistry_score": "42",
+        "debar_risk": "Low Attendance",
+        "created_at": {
+          "_seconds": 1758458185,
+          "_nanoseconds": 393000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "7": {
+    "id": "7",
+    "first_name": "Bakhshi",
+    "last_name": "Memon",
+    "email": "bakhshi.memon@example.com",
+    "gender": "Male",
+    "math_score": "24",
+    "physics_score": "36",
+    "chemistry_score": "27",
+    "path_time_job": "Yes",
+    "absence_days": "34",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "21",
+    "career_aspiration": "Doctor",
+    "fee_paid": "30998",
+    "fee_pending": "69002",
+    "fee_due_date": "2025-08-21",
+    "debar_risk": "Low Average Marks, Multiple Failures, Fee Default",
+    "updated_at": {
+      "_seconds": 1758458177,
+      "_nanoseconds": 727000000
+    },
+    "created_at": {
+      "_seconds": 1758458177,
+      "_nanoseconds": 727000000
+    },
+    "marks": {
+      "z8LiU7zuODVErn42AaL4": {
+        "id": "7",
+        "first_name": "Bakhshi",
+        "last_name": "Memon",
+        "math_score": "24",
+        "physics_score": "36",
+        "chemistry_score": "27",
+        "debar_risk": "Low Average Marks, Multiple Failures, Fee Default",
+        "created_at": {
+          "_seconds": 1758458185,
+          "_nanoseconds": 458000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "8": {
+    "id": "8",
+    "first_name": "Faris",
+    "last_name": "Jayaraman",
+    "email": "faris.jayaraman@example.com",
+    "gender": "Female",
+    "math_score": "32",
+    "physics_score": "8",
+    "chemistry_score": "36",
+    "path_time_job": "No",
+    "absence_days": "62",
+    "extracurricular_activities": "Yes",
+    "weekly_self_study_hours": "26",
+    "career_aspiration": "Entrepreneur",
+    "fee_paid": "75253",
+    "fee_pending": "24747",
+    "fee_due_date": "2025-06-03",
+    "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo",
+    "updated_at": {
+      "_seconds": 1758458177,
+      "_nanoseconds": 833000000
+    },
+    "created_at": {
+      "_seconds": 1758458177,
+      "_nanoseconds": 833000000
+    },
+    "marks": {
+      "UyURgrrrv6rAP1km0IdI": {
+        "id": "8",
+        "first_name": "Faris",
+        "last_name": "Jayaraman",
+        "math_score": "32",
+        "physics_score": "8",
+        "chemistry_score": "36",
+        "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo",
+        "created_at": {
+          "_seconds": 1758458185,
+          "_nanoseconds": 520000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "9": {
+    "id": "9",
+    "first_name": "Prisha",
+    "last_name": "Merchant",
+    "email": "prisha.merchant@example.com",
+    "gender": "Male",
+    "math_score": "26",
+    "physics_score": "20",
+    "chemistry_score": "21",
+    "path_time_job": "Yes",
+    "absence_days": "69",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "21",
+    "career_aspiration": "Teacher",
+    "fee_paid": "61087",
+    "fee_pending": "38913",
+    "fee_due_date": "2025-08-06",
+    "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo",
+    "updated_at": {
+      "_seconds": 1758458178,
+      "_nanoseconds": 27000000
+    },
+    "created_at": {
+      "_seconds": 1758458178,
+      "_nanoseconds": 27000000
+    },
+    "marks": {
+      "fp2FN3jXzri4O2Iu5SQK": {
+        "id": "9",
+        "first_name": "Prisha",
+        "last_name": "Merchant",
+        "math_score": "26",
+        "physics_score": "20",
+        "chemistry_score": "21",
+        "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo",
+        "created_at": {
+          "_seconds": 1758458185,
+          "_nanoseconds": 587000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "10": {
+    "id": "10",
+    "first_name": "Megha",
+    "last_name": "Tiwari",
+    "email": "megha.tiwari@example.com",
+    "gender": "Male",
+    "math_score": "30",
+    "physics_score": "36",
+    "chemistry_score": "34",
+    "path_time_job": "Yes",
+    "absence_days": "51",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "16",
+    "career_aspiration": "Scientist",
+    "fee_paid": "36239",
+    "fee_pending": "63761",
+    "fee_due_date": "2025-09-29",
+    "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo",
+    "updated_at": {
+      "_seconds": 1758458178,
+      "_nanoseconds": 337000000
+    },
+    "created_at": {
+      "_seconds": 1758458178,
+      "_nanoseconds": 337000000
+    },
+    "marks": {
+      "l4RH0CYm1gDot7Uplsk5": {
+        "id": "10",
+        "first_name": "Megha",
+        "last_name": "Tiwari",
+        "math_score": "30",
+        "physics_score": "36",
+        "chemistry_score": "34",
+        "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo",
+        "created_at": {
+          "_seconds": 1758458185,
+          "_nanoseconds": 657000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "11": {
+    "id": "11",
+    "first_name": "Robert",
+    "last_name": "Luthra",
+    "email": "robert.luthra@example.com",
+    "gender": "Female",
+    "math_score": "13",
+    "physics_score": "31",
+    "chemistry_score": "30",
+    "path_time_job": "No",
+    "absence_days": "48",
+    "extracurricular_activities": "Yes",
+    "weekly_self_study_hours": "2",
+    "career_aspiration": "Doctor",
+    "fee_paid": "54021",
+    "fee_pending": "45979",
+    "fee_due_date": "2025-11-16",
+    "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, Low Study + Low Marks, High Risk Combo",
+    "updated_at": {
+      "_seconds": 1758458178,
+      "_nanoseconds": 440000000
+    },
+    "created_at": {
+      "_seconds": 1758458178,
+      "_nanoseconds": 440000000
+    },
+    "marks": {
+      "xez0gUwqrEvG6k7VyIzu": {
+        "id": "11",
+        "first_name": "Robert",
+        "last_name": "Luthra",
+        "math_score": "13",
+        "physics_score": "31",
+        "chemistry_score": "30",
+        "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, Low Study + Low Marks, High Risk Combo",
+        "created_at": {
+          "_seconds": 1758458185,
+          "_nanoseconds": 722000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "12": {
+    "id": "12",
+    "first_name": "Maanas",
+    "last_name": "Bath",
+    "email": "maanas.bath@example.com",
+    "gender": "Female",
+    "math_score": "27",
+    "physics_score": "31",
+    "chemistry_score": "19",
+    "path_time_job": "No",
+    "absence_days": "31",
+    "extracurricular_activities": "Yes",
+    "weekly_self_study_hours": "5",
+    "career_aspiration": "Scientist",
+    "fee_paid": "34734",
+    "fee_pending": "65266",
+    "fee_due_date": "2025-10-08",
+    "debar_risk": "Low Average Marks, Multiple Failures, Low Study + Low Marks",
+    "updated_at": {
+      "_seconds": 1758458178,
+      "_nanoseconds": 640000000
+    },
+    "created_at": {
+      "_seconds": 1758458178,
+      "_nanoseconds": 640000000
+    },
+    "marks": {
+      "0PbiHUJ5BQM5yRjphsoU": {
+        "id": "12",
+        "first_name": "Maanas",
+        "last_name": "Bath",
+        "math_score": "27",
+        "physics_score": "31",
+        "chemistry_score": "19",
+        "debar_risk": "Low Average Marks, Multiple Failures, Low Study + Low Marks",
+        "created_at": {
+          "_seconds": 1758458185,
+          "_nanoseconds": 787000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "13": {
+    "id": "13",
+    "first_name": "Om",
+    "last_name": "Pant",
+    "email": "om.pant@example.com",
+    "gender": "Male",
+    "math_score": "40",
+    "physics_score": "23",
+    "chemistry_score": "77",
+    "path_time_job": "No",
+    "absence_days": "33",
+    "extracurricular_activities": "Yes",
+    "weekly_self_study_hours": "27",
+    "career_aspiration": "Scientist",
+    "fee_paid": "82500",
+    "fee_pending": "17500",
+    "fee_due_date": "2025-07-31",
+    "debar_risk": "Multiple Failures",
+    "updated_at": {
+      "_seconds": 1758458178,
+      "_nanoseconds": 746000000
+    },
+    "created_at": {
+      "_seconds": 1758458178,
+      "_nanoseconds": 746000000
+    },
+    "marks": {
+      "v9JFLxc99Z1Kfr2WItiW": {
+        "id": "13",
+        "first_name": "Om",
+        "last_name": "Pant",
+        "math_score": "40",
+        "physics_score": "23",
+        "chemistry_score": "77",
+        "debar_risk": "Multiple Failures",
+        "created_at": {
+          "_seconds": 1758458185,
+          "_nanoseconds": 850000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "14": {
+    "id": "14",
+    "first_name": "Madhavi",
+    "last_name": "Nazareth",
+    "email": "madhavi.nazareth@example.com",
+    "gender": "Male",
+    "math_score": "18",
+    "physics_score": "23",
+    "chemistry_score": "93",
+    "path_time_job": "No",
+    "absence_days": "23",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "13",
+    "career_aspiration": "Engineer",
+    "fee_paid": "38454",
+    "fee_pending": "61546",
+    "fee_due_date": "2025-05-04",
+    "debar_risk": "Multiple Failures, Fee Default",
+    "updated_at": {
+      "_seconds": 1758458178,
+      "_nanoseconds": 844000000
+    },
+    "created_at": {
+      "_seconds": 1758458178,
+      "_nanoseconds": 844000000
+    },
+    "marks": {
+      "8dV9QUta9lxxqTvd5ORO": {
+        "id": "14",
+        "first_name": "Madhavi",
+        "last_name": "Nazareth",
+        "math_score": "18",
+        "physics_score": "23",
+        "chemistry_score": "93",
+        "debar_risk": "Multiple Failures, Fee Default",
+        "created_at": {
+          "_seconds": 1758458185,
+          "_nanoseconds": 912000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "15": {
+    "id": "15",
+    "first_name": "Laksh",
+    "last_name": "Pillay",
+    "email": "laksh.pillay@example.com",
+    "gender": "Male",
+    "math_score": "19",
+    "physics_score": "18",
+    "chemistry_score": "76",
+    "path_time_job": "Yes",
+    "absence_days": "26",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "11",
+    "career_aspiration": "Engineer",
+    "fee_paid": "84257",
+    "fee_pending": "15743",
+    "fee_due_date": "2025-11-05",
+    "debar_risk": "Multiple Failures",
+    "updated_at": {
+      "_seconds": 1758458178,
+      "_nanoseconds": 950000000
+    },
+    "created_at": {
+      "_seconds": 1758458178,
+      "_nanoseconds": 950000000
+    },
+    "marks": {
+      "HeuHvJRuPGpgCSzsZ5om": {
+        "id": "15",
+        "first_name": "Laksh",
+        "last_name": "Pillay",
+        "math_score": "19",
+        "physics_score": "18",
+        "chemistry_score": "76",
+        "debar_risk": "Multiple Failures",
+        "created_at": {
+          "_seconds": 1758458185,
+          "_nanoseconds": 981000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "16": {
+    "id": "16",
+    "first_name": "Teerth",
+    "last_name": "Mangal",
+    "email": "teerth.mangal@example.com",
+    "gender": "Male",
+    "math_score": "23",
+    "physics_score": "24",
+    "chemistry_score": "35",
+    "path_time_job": "Yes",
+    "absence_days": "50",
+    "extracurricular_activities": "Yes",
+    "weekly_self_study_hours": "7",
+    "career_aspiration": "Artist",
+    "fee_paid": "31718",
+    "fee_pending": "68282",
+    "fee_due_date": "2025-07-03",
+    "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, Fee Default, High Risk Combo, Admin Debar",
+    "updated_at": {
+      "_seconds": 1758458179,
+      "_nanoseconds": 65000000
+    },
+    "created_at": {
+      "_seconds": 1758458179,
+      "_nanoseconds": 65000000
+    },
+    "marks": {
+      "BbStKqJGUrJzn6al4DHH": {
+        "id": "16",
+        "first_name": "Teerth",
+        "last_name": "Mangal",
+        "math_score": "23",
+        "physics_score": "24",
+        "chemistry_score": "35",
+        "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, Fee Default, High Risk Combo, Admin Debar",
+        "created_at": {
+          "_seconds": 1758458186,
+          "_nanoseconds": 46000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "17": {
+    "id": "17",
+    "first_name": "Oliver",
+    "last_name": "Mane",
+    "email": "oliver.mane@example.com",
+    "gender": "Female",
+    "math_score": "26",
+    "physics_score": "25",
+    "chemistry_score": "32",
+    "path_time_job": "No",
+    "absence_days": "42",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "24",
+    "career_aspiration": "Teacher",
+    "fee_paid": "54080",
+    "fee_pending": "45920",
+    "fee_due_date": "2025-06-29",
+    "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo",
+    "updated_at": {
+      "_seconds": 1758458179,
+      "_nanoseconds": 154000000
+    },
+    "created_at": {
+      "_seconds": 1758458179,
+      "_nanoseconds": 154000000
+    },
+    "marks": {
+      "vQcREYPTVcXUzCNoHh6P": {
+        "id": "17",
+        "first_name": "Oliver",
+        "last_name": "Mane",
+        "math_score": "26",
+        "physics_score": "25",
+        "chemistry_score": "32",
+        "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo",
+        "created_at": {
+          "_seconds": 1758458186,
+          "_nanoseconds": 120000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "18": {
+    "id": "18",
+    "first_name": "Vanya",
+    "last_name": "Ganguly",
+    "email": "vanya.ganguly@example.com",
+    "gender": "Male",
+    "math_score": "26",
+    "physics_score": "31",
+    "chemistry_score": "19",
+    "path_time_job": "Yes",
+    "absence_days": "30",
+    "extracurricular_activities": "Yes",
+    "weekly_self_study_hours": "5",
+    "career_aspiration": "Teacher",
+    "fee_paid": "50406",
+    "fee_pending": "49594",
+    "fee_due_date": "2025-11-11",
+    "debar_risk": "Low Average Marks, Multiple Failures, Low Study + Low Marks",
+    "updated_at": {
+      "_seconds": 1758458179,
+      "_nanoseconds": 245000000
+    },
+    "created_at": {
+      "_seconds": 1758458179,
+      "_nanoseconds": 245000000
+    },
+    "marks": {
+      "fdH63FaKj3QLe0lG7PKm": {
+        "id": "18",
+        "first_name": "Vanya",
+        "last_name": "Ganguly",
+        "math_score": "26",
+        "physics_score": "31",
+        "chemistry_score": "19",
+        "debar_risk": "Low Average Marks, Multiple Failures, Low Study + Low Marks",
+        "created_at": {
+          "_seconds": 1758458186,
+          "_nanoseconds": 181000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "19": {
+    "id": "19",
+    "first_name": "Vamakshi",
+    "last_name": "Varkey",
+    "email": "vamakshi.varkey@example.com",
+    "gender": "Male",
+    "math_score": "16",
+    "physics_score": "30",
+    "chemistry_score": "42",
+    "path_time_job": "Yes",
+    "absence_days": "30",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "0",
+    "career_aspiration": "Scientist",
+    "fee_paid": "24423",
+    "fee_pending": "75577",
+    "fee_due_date": "2025-05-17",
+    "debar_risk": "Low Average Marks, Multiple Failures, Low Study + Low Marks, Fee Default",
+    "updated_at": {
+      "_seconds": 1758458179,
+      "_nanoseconds": 356000000
+    },
+    "created_at": {
+      "_seconds": 1758458179,
+      "_nanoseconds": 356000000
+    },
+    "marks": {
+      "hASqXjRi10rMopiR5xbr": {
+        "id": "19",
+        "first_name": "Vamakshi",
+        "last_name": "Varkey",
+        "math_score": "16",
+        "physics_score": "30",
+        "chemistry_score": "42",
+        "debar_risk": "Low Average Marks, Multiple Failures, Low Study + Low Marks, Fee Default",
+        "created_at": {
+          "_seconds": 1758458186,
+          "_nanoseconds": 246000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "20": {
+    "id": "20",
+    "first_name": "Pranav",
+    "last_name": "Ravi",
+    "email": "pranav.ravi@example.com",
+    "gender": "Female",
+    "math_score": "21",
+    "physics_score": "29",
+    "chemistry_score": "38",
+    "path_time_job": "No",
+    "absence_days": "62",
+    "extracurricular_activities": "Yes",
+    "weekly_self_study_hours": "1",
+    "career_aspiration": "Scientist",
+    "fee_paid": "49164",
+    "fee_pending": "50836",
+    "fee_due_date": "2025-10-13",
+    "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, Low Study + Low Marks, High Risk Combo",
+    "updated_at": {
+      "_seconds": 1758458179,
+      "_nanoseconds": 465000000
+    },
+    "created_at": {
+      "_seconds": 1758458179,
+      "_nanoseconds": 465000000
+    },
+    "marks": {
+      "9lWhahjroF1Q5gMZnkHz": {
+        "id": "20",
+        "first_name": "Pranav",
+        "last_name": "Ravi",
+        "math_score": "21",
+        "physics_score": "29",
+        "chemistry_score": "38",
+        "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, Low Study + Low Marks, High Risk Combo",
+        "created_at": {
+          "_seconds": 1758458186,
+          "_nanoseconds": 313000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "21": {
+    "id": "21",
+    "first_name": "Gautam",
+    "last_name": "Maharaj",
+    "email": "gautam.maharaj@example.com",
+    "gender": "Female",
+    "math_score": "33",
+    "physics_score": "23",
+    "chemistry_score": "25",
+    "path_time_job": "No",
+    "absence_days": "52",
+    "extracurricular_activities": "Yes",
+    "weekly_self_study_hours": "0",
+    "career_aspiration": "Teacher",
+    "fee_paid": "47072",
+    "fee_pending": "52928",
+    "fee_due_date": "2025-03-21",
+    "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, Low Study + Low Marks, Fee Default, High Risk Combo, Admin Debar",
+    "updated_at": {
+      "_seconds": 1758458179,
+      "_nanoseconds": 535000000
+    },
+    "created_at": {
+      "_seconds": 1758458179,
+      "_nanoseconds": 535000000
+    },
+    "marks": {
+      "cwjze2m4qP1YBXEGaExu": {
+        "id": "21",
+        "first_name": "Gautam",
+        "last_name": "Maharaj",
+        "math_score": "33",
+        "physics_score": "23",
+        "chemistry_score": "25",
+        "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, Low Study + Low Marks, Fee Default, High Risk Combo, Admin Debar",
+        "created_at": {
+          "_seconds": 1758458186,
+          "_nanoseconds": 378000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "22": {
+    "id": "22",
+    "first_name": "Ishwar",
+    "last_name": "Singhal",
+    "email": "ishwar.singhal@example.com",
+    "gender": "Male",
+    "math_score": "36",
+    "physics_score": "36",
+    "chemistry_score": "20",
+    "path_time_job": "No",
+    "absence_days": "29",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "0",
+    "career_aspiration": "Entrepreneur",
+    "fee_paid": "84396",
+    "fee_pending": "15604",
+    "fee_due_date": "2025-10-08",
+    "debar_risk": "Low Average Marks, Multiple Failures, Low Study + Low Marks",
+    "updated_at": {
+      "_seconds": 1758458179,
+      "_nanoseconds": 721000000
+    },
+    "created_at": {
+      "_seconds": 1758458179,
+      "_nanoseconds": 721000000
+    },
+    "marks": {
+      "wuJMGETKhbxn99nDuDwZ": {
+        "id": "22",
+        "first_name": "Ishwar",
+        "last_name": "Singhal",
+        "math_score": "36",
+        "physics_score": "36",
+        "chemistry_score": "20",
+        "debar_risk": "Low Average Marks, Multiple Failures, Low Study + Low Marks",
+        "created_at": {
+          "_seconds": 1758458186,
+          "_nanoseconds": 442000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "23": {
+    "id": "23",
+    "first_name": "Mitesh",
+    "last_name": "Chander",
+    "email": "mitesh.chander@example.com",
+    "gender": "Male",
+    "math_score": "15",
+    "physics_score": "28",
+    "chemistry_score": "32",
+    "path_time_job": "No",
+    "absence_days": "62",
+    "extracurricular_activities": "Yes",
+    "weekly_self_study_hours": "1",
+    "career_aspiration": "Engineer",
+    "fee_paid": "88549",
+    "fee_pending": "11451",
+    "fee_due_date": "2025-06-02",
+    "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, Low Study + Low Marks, High Risk Combo",
+    "updated_at": {
+      "_seconds": 1758458179,
+      "_nanoseconds": 788000000
+    },
+    "created_at": {
+      "_seconds": 1758458179,
+      "_nanoseconds": 788000000
+    },
+    "marks": {
+      "gt9JU2B6EdDYULD2a28y": {
+        "id": "23",
+        "first_name": "Mitesh",
+        "last_name": "Chander",
+        "math_score": "15",
+        "physics_score": "28",
+        "chemistry_score": "32",
+        "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, Low Study + Low Marks, High Risk Combo",
+        "created_at": {
+          "_seconds": 1758458186,
+          "_nanoseconds": 507000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "24": {
+    "id": "24",
+    "first_name": "Radha",
+    "last_name": "Sinha",
+    "email": "radha.sinha@example.com",
+    "gender": "Male",
+    "math_score": "47",
+    "physics_score": "40",
+    "chemistry_score": "31",
+    "path_time_job": "No",
+    "absence_days": "0",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "2",
+    "career_aspiration": "Teacher",
+    "fee_paid": "99796",
+    "fee_pending": "204",
+    "fee_due_date": "2025-11-24",
+    "debar_risk": "Low Study + Low Marks",
+    "updated_at": {
+      "_seconds": 1758458179,
+      "_nanoseconds": 851000000
+    },
+    "created_at": {
+      "_seconds": 1758458179,
+      "_nanoseconds": 851000000
+    },
+    "marks": {
+      "hcyFenC0lvtdOkHlbxkK": {
+        "id": "24",
+        "first_name": "Radha",
+        "last_name": "Sinha",
+        "math_score": "47",
+        "physics_score": "40",
+        "chemistry_score": "31",
+        "debar_risk": "Low Study + Low Marks",
+        "created_at": {
+          "_seconds": 1758458186,
+          "_nanoseconds": 574000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "25": {
+    "id": "25",
+    "first_name": "Girik",
+    "last_name": "Grover",
+    "email": "girik.grover@example.com",
+    "gender": "Male",
+    "math_score": "39",
+    "physics_score": "56",
+    "chemistry_score": "33",
+    "path_time_job": "No",
+    "absence_days": "73",
+    "extracurricular_activities": "Yes",
+    "weekly_self_study_hours": "14",
+    "career_aspiration": "Engineer",
+    "fee_paid": "28985",
+    "fee_pending": "71015",
+    "fee_due_date": "2025-06-08",
+    "debar_risk": "Low Attendance, Fee Default, Admin Debar",
+    "updated_at": {
+      "_seconds": 1758458179,
+      "_nanoseconds": 924000000
+    },
+    "created_at": {
+      "_seconds": 1758458179,
+      "_nanoseconds": 924000000
+    },
+    "marks": {
+      "ETe8BRXDlASElf90Jyfz": {
+        "id": "25",
+        "first_name": "Girik",
+        "last_name": "Grover",
+        "math_score": "39",
+        "physics_score": "56",
+        "chemistry_score": "33",
+        "debar_risk": "Low Attendance, Fee Default, Admin Debar",
+        "created_at": {
+          "_seconds": 1758458186,
+          "_nanoseconds": 643000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "26": {
+    "id": "26",
+    "first_name": "Qarin",
+    "last_name": "Sastry",
+    "email": "qarin.sastry@example.com",
+    "gender": "Male",
+    "math_score": "20",
+    "physics_score": "68",
+    "chemistry_score": "50",
+    "path_time_job": "Yes",
+    "absence_days": "20",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "24",
+    "career_aspiration": "Artist",
+    "fee_paid": "27309",
+    "fee_pending": "72691",
+    "fee_due_date": "2025-08-14",
+    "debar_risk": "Fee Default",
+    "updated_at": {
+      "_seconds": 1758458180,
+      "_nanoseconds": 73000000
+    },
+    "created_at": {
+      "_seconds": 1758458180,
+      "_nanoseconds": 73000000
+    },
+    "marks": {
+      "pVCgiJZJqSJO60rRfvMl": {
+        "id": "26",
+        "first_name": "Qarin",
+        "last_name": "Sastry",
+        "math_score": "20",
+        "physics_score": "68",
+        "chemistry_score": "50",
+        "debar_risk": "Fee Default",
+        "created_at": {
+          "_seconds": 1758458186,
+          "_nanoseconds": 706000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "27": {
+    "id": "27",
+    "first_name": "Gaurika",
+    "last_name": "Sengupta",
+    "email": "gaurika.sengupta@example.com",
+    "gender": "Male",
+    "math_score": "28",
+    "physics_score": "32",
+    "chemistry_score": "84",
+    "path_time_job": "No",
+    "absence_days": "56",
+    "extracurricular_activities": "Yes",
+    "weekly_self_study_hours": "21",
+    "career_aspiration": "Scientist",
+    "fee_paid": "37442",
+    "fee_pending": "62558",
+    "fee_due_date": "2025-06-04",
+    "debar_risk": "Low Attendance, Multiple Failures, Fee Default, Admin Debar",
+    "updated_at": {
+      "_seconds": 1758458180,
+      "_nanoseconds": 175000000
+    },
+    "created_at": {
+      "_seconds": 1758458180,
+      "_nanoseconds": 175000000
+    },
+    "marks": {
+      "BnlukLMo8ROzLsXvH8Rh": {
+        "id": "27",
+        "first_name": "Gaurika",
+        "last_name": "Sengupta",
+        "math_score": "28",
+        "physics_score": "32",
+        "chemistry_score": "84",
+        "debar_risk": "Low Attendance, Multiple Failures, Fee Default, Admin Debar",
+        "created_at": {
+          "_seconds": 1758458186,
+          "_nanoseconds": 767000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "28": {
+    "id": "28",
+    "first_name": "Benjamin",
+    "last_name": "Kaul",
+    "email": "benjamin.kaul@example.com",
+    "gender": "Male",
+    "math_score": "21",
+    "physics_score": "22",
+    "chemistry_score": "95",
+    "path_time_job": "No",
+    "absence_days": "1",
+    "extracurricular_activities": "Yes",
+    "weekly_self_study_hours": "18",
+    "career_aspiration": "Doctor",
+    "fee_paid": "26431",
+    "fee_pending": "73569",
+    "fee_due_date": "2025-06-29",
+    "debar_risk": "Multiple Failures, Fee Default",
+    "updated_at": {
+      "_seconds": 1758458180,
+      "_nanoseconds": 277000000
+    },
+    "created_at": {
+      "_seconds": 1758458180,
+      "_nanoseconds": 277000000
+    },
+    "marks": {
+      "vjDW1GcuUgJsF5DtK6lN": {
+        "id": "28",
+        "first_name": "Benjamin",
+        "last_name": "Kaul",
+        "math_score": "21",
+        "physics_score": "22",
+        "chemistry_score": "95",
+        "debar_risk": "Multiple Failures, Fee Default",
+        "created_at": {
+          "_seconds": 1758458186,
+          "_nanoseconds": 830000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "29": {
+    "id": "29",
+    "first_name": "Damini",
+    "last_name": "Anne",
+    "email": "damini.anne@example.com",
+    "gender": "Male",
+    "math_score": "91",
+    "physics_score": "34",
+    "chemistry_score": "29",
+    "path_time_job": "Yes",
+    "absence_days": "80",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "11",
+    "career_aspiration": "Engineer",
+    "fee_paid": "24209",
+    "fee_pending": "75791",
+    "fee_due_date": "2025-04-07",
+    "debar_risk": "Low Attendance, Fee Default, Admin Debar",
+    "updated_at": {
+      "_seconds": 1758458180,
+      "_nanoseconds": 388000000
+    },
+    "created_at": {
+      "_seconds": 1758458180,
+      "_nanoseconds": 388000000
+    },
+    "marks": {
+      "jcq6z9AosSbvtXcUiZo3": {
+        "id": "29",
+        "first_name": "Damini",
+        "last_name": "Anne",
+        "math_score": "91",
+        "physics_score": "34",
+        "chemistry_score": "29",
+        "debar_risk": "Low Attendance, Fee Default, Admin Debar",
+        "created_at": {
+          "_seconds": 1758458186,
+          "_nanoseconds": 893000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "30": {
+    "id": "30",
+    "first_name": "Faqid",
+    "last_name": "Contractor",
+    "email": "faqid.contractor@example.com",
+    "gender": "Female",
+    "math_score": "64",
+    "physics_score": "56",
+    "chemistry_score": "65",
+    "path_time_job": "No",
+    "absence_days": "14",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "1",
+    "career_aspiration": "Entrepreneur",
+    "fee_paid": "39249",
+    "fee_pending": "60751",
+    "fee_due_date": "2025-07-20",
+    "debar_risk": "Fee Default",
+    "updated_at": {
+      "_seconds": 1758458180,
+      "_nanoseconds": 487000000
+    },
+    "created_at": {
+      "_seconds": 1758458180,
+      "_nanoseconds": 487000000
+    },
+    "marks": {
+      "gbc3XguBAnk5AuyNvLOb": {
+        "id": "30",
+        "first_name": "Faqid",
+        "last_name": "Contractor",
+        "math_score": "64",
+        "physics_score": "56",
+        "chemistry_score": "65",
+        "debar_risk": "Fee Default",
+        "created_at": {
+          "_seconds": 1758458186,
+          "_nanoseconds": 961000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "31": {
+    "id": "31",
+    "first_name": "Amara",
+    "last_name": "Walia",
+    "email": "amara.walia@example.com",
+    "gender": "Male",
+    "math_score": "21",
+    "physics_score": "19",
+    "chemistry_score": "21",
+    "path_time_job": "No",
+    "absence_days": "53",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "24",
+    "career_aspiration": "Doctor",
+    "fee_paid": "95082",
+    "fee_pending": "4918",
+    "fee_due_date": "2025-03-20",
+    "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo",
+    "updated_at": {
+      "_seconds": 1758458180,
+      "_nanoseconds": 585000000
+    },
+    "created_at": {
+      "_seconds": 1758458180,
+      "_nanoseconds": 585000000
+    },
+    "marks": {
+      "SdzzkXeANC8AH65e6cLb": {
+        "id": "31",
+        "first_name": "Amara",
+        "last_name": "Walia",
+        "math_score": "21",
+        "physics_score": "19",
+        "chemistry_score": "21",
+        "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo",
+        "created_at": {
+          "_seconds": 1758458187,
+          "_nanoseconds": 19000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "32": {
+    "id": "32",
+    "first_name": "Wahab",
+    "last_name": "Lalla",
+    "email": "wahab.lalla@example.com",
+    "gender": "Female",
+    "math_score": "36",
+    "physics_score": "26",
+    "chemistry_score": "17",
+    "path_time_job": "No",
+    "absence_days": "70",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "27",
+    "career_aspiration": "Artist",
+    "fee_paid": "62076",
+    "fee_pending": "37924",
+    "fee_due_date": "2025-03-27",
+    "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo",
+    "updated_at": {
+      "_seconds": 1758458180,
+      "_nanoseconds": 685000000
+    },
+    "created_at": {
+      "_seconds": 1758458180,
+      "_nanoseconds": 685000000
+    },
+    "marks": {
+      "aSAlQ0X1S7hKaWSF27if": {
+        "id": "32",
+        "first_name": "Wahab",
+        "last_name": "Lalla",
+        "math_score": "36",
+        "physics_score": "26",
+        "chemistry_score": "17",
+        "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo",
+        "created_at": {
+          "_seconds": 1758458187,
+          "_nanoseconds": 86000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "33": {
+    "id": "33",
+    "first_name": "Chanchal",
+    "last_name": "Mohanty",
+    "email": "chanchal.mohanty@example.com",
+    "gender": "Male",
+    "math_score": "30",
+    "physics_score": "19",
+    "chemistry_score": "26",
+    "path_time_job": "No",
+    "absence_days": "55",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "7",
+    "career_aspiration": "Scientist",
+    "fee_paid": "73892",
+    "fee_pending": "26108",
+    "fee_due_date": "2025-04-05",
+    "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo",
+    "updated_at": {
+      "_seconds": 1758458180,
+      "_nanoseconds": 748000000
+    },
+    "created_at": {
+      "_seconds": 1758458180,
+      "_nanoseconds": 748000000
+    },
+    "marks": {
+      "OYDf7UGqFnWmEFiBWxbn": {
+        "id": "33",
+        "first_name": "Chanchal",
+        "last_name": "Mohanty",
+        "math_score": "30",
+        "physics_score": "19",
+        "chemistry_score": "26",
+        "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo",
+        "created_at": {
+          "_seconds": 1758458187,
+          "_nanoseconds": 147000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "34": {
+    "id": "34",
+    "first_name": "Megha",
+    "last_name": "Chatterjee",
+    "email": "megha.chatterjee@example.com",
+    "gender": "Male",
+    "math_score": "40",
+    "physics_score": "29",
+    "chemistry_score": "30",
+    "path_time_job": "Yes",
+    "absence_days": "70",
+    "extracurricular_activities": "Yes",
+    "weekly_self_study_hours": "13",
+    "career_aspiration": "Teacher",
+    "fee_paid": "67896",
+    "fee_pending": "32104",
+    "fee_due_date": "2025-10-16",
+    "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo",
+    "updated_at": {
+      "_seconds": 1758458180,
+      "_nanoseconds": 819000000
+    },
+    "created_at": {
+      "_seconds": 1758458180,
+      "_nanoseconds": 819000000
+    },
+    "marks": {
+      "hO3nLyzL4PmiuaRB0BUx": {
+        "id": "34",
+        "first_name": "Megha",
+        "last_name": "Chatterjee",
+        "math_score": "40",
+        "physics_score": "29",
+        "chemistry_score": "30",
+        "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo",
+        "created_at": {
+          "_seconds": 1758458187,
+          "_nanoseconds": 216000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "35": {
+    "id": "35",
+    "first_name": "David",
+    "last_name": "Varty",
+    "email": "david.varty@example.com",
+    "gender": "Female",
+    "math_score": "38",
+    "physics_score": "15",
+    "chemistry_score": "25",
+    "path_time_job": "Yes",
+    "absence_days": "74",
+    "extracurricular_activities": "Yes",
+    "weekly_self_study_hours": "23",
+    "career_aspiration": "Teacher",
+    "fee_paid": "30238",
+    "fee_pending": "69762",
+    "fee_due_date": "2025-03-27",
+    "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, Fee Default, High Risk Combo, Admin Debar",
+    "updated_at": {
+      "_seconds": 1758458180,
+      "_nanoseconds": 894000000
+    },
+    "created_at": {
+      "_seconds": 1758458180,
+      "_nanoseconds": 894000000
+    },
+    "marks": {
+      "aqB0LIBnX19zXFjd01Bb": {
+        "id": "35",
+        "first_name": "David",
+        "last_name": "Varty",
+        "math_score": "38",
+        "physics_score": "15",
+        "chemistry_score": "25",
+        "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, Fee Default, High Risk Combo, Admin Debar",
+        "created_at": {
+          "_seconds": 1758458187,
+          "_nanoseconds": 286000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "36": {
+    "id": "36",
+    "first_name": "Odika",
+    "last_name": "Nagy",
+    "email": "odika.nagy@example.com",
+    "gender": "Male",
+    "math_score": "37",
+    "physics_score": "35",
+    "chemistry_score": "20",
+    "path_time_job": "Yes",
+    "absence_days": "75",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "9",
+    "career_aspiration": "Entrepreneur",
+    "fee_paid": "59375",
+    "fee_pending": "40625",
+    "fee_due_date": "2025-08-08",
+    "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo",
+    "updated_at": {
+      "_seconds": 1758458180,
+      "_nanoseconds": 964000000
+    },
+    "created_at": {
+      "_seconds": 1758458180,
+      "_nanoseconds": 964000000
+    },
+    "marks": {
+      "FRSONFFOil8CU2t1Pt4K": {
+        "id": "36",
+        "first_name": "Odika",
+        "last_name": "Nagy",
+        "math_score": "37",
+        "physics_score": "35",
+        "chemistry_score": "20",
+        "debar_risk": "Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo",
+        "created_at": {
+          "_seconds": 1758458187,
+          "_nanoseconds": 347000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "37": {
+    "id": "37",
+    "first_name": "Madhav",
+    "last_name": "Dhingra",
+    "email": "madhav.dhingra@example.com",
+    "gender": "Male",
+    "math_score": "91",
+    "physics_score": "54",
+    "chemistry_score": "64",
+    "path_time_job": "Yes",
+    "absence_days": "72",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "0",
+    "career_aspiration": "Teacher",
+    "fee_paid": "21210",
+    "fee_pending": "78790",
+    "fee_due_date": "2025-06-05",
+    "debar_risk": "Low Attendance, Fee Default, Admin Debar",
+    "updated_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 27000000
+    },
+    "created_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 27000000
+    },
+    "marks": {
+      "i4gQYVg9NiYbMZQtYYKl": {
+        "id": "37",
+        "first_name": "Madhav",
+        "last_name": "Dhingra",
+        "math_score": "91",
+        "physics_score": "54",
+        "chemistry_score": "64",
+        "debar_risk": "Low Attendance, Fee Default, Admin Debar",
+        "created_at": {
+          "_seconds": 1758458187,
+          "_nanoseconds": 412000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "38": {
+    "id": "38",
+    "first_name": "Rishi",
+    "last_name": "Ratti",
+    "email": "rishi.ratti@example.com",
+    "gender": "Male",
+    "math_score": "63",
+    "physics_score": "48",
+    "chemistry_score": "51",
+    "path_time_job": "Yes",
+    "absence_days": "76",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "18",
+    "career_aspiration": "Doctor",
+    "fee_paid": "22450",
+    "fee_pending": "77550",
+    "fee_due_date": "2025-09-16",
+    "debar_risk": "Low Attendance, Fee Default, Admin Debar",
+    "updated_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 98000000
+    },
+    "created_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 98000000
+    },
+    "marks": {
+      "JFuu68ArGEBhlixuzvB1": {
+        "id": "38",
+        "first_name": "Rishi",
+        "last_name": "Ratti",
+        "math_score": "63",
+        "physics_score": "48",
+        "chemistry_score": "51",
+        "debar_risk": "Low Attendance, Fee Default, Admin Debar",
+        "created_at": {
+          "_seconds": 1758458187,
+          "_nanoseconds": 474000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "39": {
+    "id": "39",
+    "first_name": "Quincy",
+    "last_name": "Raval",
+    "email": "quincy.raval@example.com",
+    "gender": "Male",
+    "math_score": "31",
+    "physics_score": "83",
+    "chemistry_score": "37",
+    "path_time_job": "No",
+    "absence_days": "77",
+    "extracurricular_activities": "Yes",
+    "weekly_self_study_hours": "12",
+    "career_aspiration": "Scientist",
+    "fee_paid": "37230",
+    "fee_pending": "62770",
+    "fee_due_date": "2025-05-20",
+    "debar_risk": "Low Attendance, Fee Default, Admin Debar",
+    "updated_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 159000000
+    },
+    "created_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 159000000
+    },
+    "marks": {
+      "OoAdDRuyb388bd2fr4dH": {
+        "id": "39",
+        "first_name": "Quincy",
+        "last_name": "Raval",
+        "math_score": "31",
+        "physics_score": "83",
+        "chemistry_score": "37",
+        "debar_risk": "Low Attendance, Fee Default, Admin Debar",
+        "created_at": {
+          "_seconds": 1758458187,
+          "_nanoseconds": 542000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "40": {
+    "id": "40",
+    "first_name": "Siya",
+    "last_name": "Minhas",
+    "email": "siya.minhas@example.com",
+    "gender": "Male",
+    "math_score": "44",
+    "physics_score": "38",
+    "chemistry_score": "93",
+    "path_time_job": "Yes",
+    "absence_days": "76",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "20",
+    "career_aspiration": "Entrepreneur",
+    "fee_paid": "38606",
+    "fee_pending": "61394",
+    "fee_due_date": "2025-07-18",
+    "debar_risk": "Low Attendance, Fee Default, Admin Debar",
+    "updated_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 224000000
+    },
+    "created_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 224000000
+    },
+    "marks": {
+      "jmY4mUq78R9GQlCsiBma": {
+        "id": "40",
+        "first_name": "Siya",
+        "last_name": "Minhas",
+        "math_score": "44",
+        "physics_score": "38",
+        "chemistry_score": "93",
+        "debar_risk": "Low Attendance, Fee Default, Admin Debar",
+        "created_at": {
+          "_seconds": 1758458187,
+          "_nanoseconds": 610000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "41": {
+    "id": "41",
+    "first_name": "Aashi",
+    "last_name": "Dara",
+    "email": "aashi.dara@example.com",
+    "gender": "Female",
+    "math_score": "16",
+    "physics_score": "46",
+    "chemistry_score": "46",
+    "path_time_job": "No",
+    "absence_days": "59",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "5",
+    "career_aspiration": "Artist",
+    "fee_paid": "33210",
+    "fee_pending": "66790",
+    "fee_due_date": "2025-07-03",
+    "debar_risk": "Low Attendance, Fee Default, Admin Debar",
+    "updated_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 304000000
+    },
+    "created_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 304000000
+    },
+    "marks": {
+      "jvAS6qSFp881loPR1nxZ": {
+        "id": "41",
+        "first_name": "Aashi",
+        "last_name": "Dara",
+        "math_score": "16",
+        "physics_score": "46",
+        "chemistry_score": "46",
+        "debar_risk": "Low Attendance, Fee Default, Admin Debar",
+        "created_at": {
+          "_seconds": 1758458187,
+          "_nanoseconds": 672000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "42": {
+    "id": "42",
+    "first_name": "Priya",
+    "last_name": "Iyengar",
+    "email": "priya.iyengar@example.com",
+    "gender": "Female",
+    "math_score": "56",
+    "physics_score": "100",
+    "chemistry_score": "100",
+    "path_time_job": "Yes",
+    "absence_days": "66",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "23",
+    "career_aspiration": "Engineer",
+    "fee_paid": "23138",
+    "fee_pending": "76862",
+    "fee_due_date": "2025-09-16",
+    "debar_risk": "Low Attendance, Fee Default, Admin Debar",
+    "updated_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 368000000
+    },
+    "created_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 368000000
+    },
+    "marks": {
+      "IXw2K7Rbyik0b71szKfb": {
+        "id": "42",
+        "first_name": "Priya",
+        "last_name": "Iyengar",
+        "math_score": "56",
+        "physics_score": "100",
+        "chemistry_score": "100",
+        "debar_risk": "Low Attendance, Fee Default, Admin Debar",
+        "created_at": {
+          "_seconds": 1758458187,
+          "_nanoseconds": 736000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "43": {
+    "id": "43",
+    "first_name": "Pushti",
+    "last_name": "Behl",
+    "email": "pushti.behl@example.com",
+    "gender": "Female",
+    "math_score": "58",
+    "physics_score": "79",
+    "chemistry_score": "62",
+    "path_time_job": "No",
+    "absence_days": "9",
+    "extracurricular_activities": "No",
+    "weekly_self_study_hours": "28",
+    "career_aspiration": "Doctor",
+    "fee_paid": "95204",
+    "fee_pending": "4796",
+    "fee_due_date": "2025-06-14",
+    "debar_risk": "None",
+    "updated_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 436000000
+    },
+    "created_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 436000000
+    },
+    "marks": {
+      "ib1OZuNMsvQFWQkwd0g9": {
+        "id": "43",
+        "first_name": "Pushti",
+        "last_name": "Behl",
+        "math_score": "58",
+        "physics_score": "79",
+        "chemistry_score": "62",
+        "debar_risk": "None",
+        "created_at": {
+          "_seconds": 1758458187,
+          "_nanoseconds": 797000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "44": {
+    "id": "44",
+    "first_name": "Nandini",
+    "last_name": "Zacharia",
+    "email": "nandini.zacharia@example.com",
+    "gender": "Male",
+    "math_score": "78",
+    "physics_score": "79",
+    "chemistry_score": "75",
+    "path_time_job": "No",
+    "absence_days": "20",
+    "extracurricular_activities": "Yes",
+    "weekly_self_study_hours": "3",
+    "career_aspiration": "Doctor",
+    "fee_paid": "20546",
+    "fee_pending": "79454",
+    "fee_due_date": "2025-06-06",
+    "debar_risk": "Fee Default",
+    "updated_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 515000000
+    },
+    "created_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 515000000
+    },
+    "marks": {
+      "PuuzgHPA0V6ZSCsgXSpX": {
+        "id": "44",
+        "first_name": "Nandini",
+        "last_name": "Zacharia",
+        "math_score": "78",
+        "physics_score": "79",
+        "chemistry_score": "75",
+        "debar_risk": "Fee Default",
+        "created_at": {
+          "_seconds": 1758458187,
+          "_nanoseconds": 859000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "45": {
+    "id": "45",
+    "first_name": "Max",
+    "last_name": "Sen",
+    "email": "max.sen@example.com",
+    "gender": "Female",
+    "math_score": "84",
+    "physics_score": "74",
+    "chemistry_score": "36",
+    "path_time_job": "No",
+    "absence_days": "21",
+    "extracurricular_activities": "Yes",
+    "weekly_self_study_hours": "4",
+    "career_aspiration": "Artist",
+    "fee_paid": "31894",
+    "fee_pending": "68106",
+    "fee_due_date": "2025-06-20",
+    "debar_risk": "Fee Default",
+    "updated_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 581000000
+    },
+    "created_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 581000000
+    },
+    "marks": {
+      "HBKimVnhZg4MNwwJkqxj": {
+        "id": "45",
+        "first_name": "Max",
+        "last_name": "Sen",
+        "math_score": "84",
+        "physics_score": "74",
+        "chemistry_score": "36",
+        "debar_risk": "Fee Default",
+        "created_at": {
+          "_seconds": 1758458187,
+          "_nanoseconds": 927000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "46": {
+    "id": "46",
+    "first_name": "Bina",
+    "last_name": "Nanda",
+    "email": "bina.nanda@example.com",
+    "gender": "Female",
+    "math_score": "72",
+    "physics_score": "35",
+    "chemistry_score": "44",
+    "path_time_job": "No",
+    "absence_days": "7",
+    "extracurricular_activities": "Yes",
+    "weekly_self_study_hours": "1",
+    "career_aspiration": "Engineer",
+    "fee_paid": "34506",
+    "fee_pending": "65494",
+    "fee_due_date": "2025-10-07",
+    "debar_risk": "None",
+    "updated_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 650000000
+    },
+    "created_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 650000000
+    },
+    "marks": {
+      "bOPX6drQBX2mMAg9rIoP": {
+        "id": "46",
+        "first_name": "Bina",
+        "last_name": "Nanda",
+        "math_score": "72",
+        "physics_score": "35",
+        "chemistry_score": "44",
+        "debar_risk": "None",
+        "created_at": {
+          "_seconds": 1758458187,
+          "_nanoseconds": 989000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "47": {
+    "id": "47",
+    "first_name": "Frado",
+    "last_name": "Lalla",
+    "email": "frado.lalla@example.com",
+    "gender": "Female",
+    "math_score": "67",
+    "physics_score": "60",
+    "chemistry_score": "92",
+    "path_time_job": "Yes",
+    "absence_days": "52",
+    "extracurricular_activities": "Yes",
+    "weekly_self_study_hours": "0",
+    "career_aspiration": "Teacher",
+    "fee_paid": "84912",
+    "fee_pending": "15088",
+    "fee_due_date": "2025-10-20",
+    "debar_risk": "Low Attendance",
+    "updated_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 714000000
+    },
+    "created_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 714000000
+    },
+    "marks": {
+      "chzpexId1mIdSLLDyuVu": {
+        "id": "47",
+        "first_name": "Frado",
+        "last_name": "Lalla",
+        "math_score": "67",
+        "physics_score": "60",
+        "chemistry_score": "92",
+        "debar_risk": "Low Attendance",
+        "created_at": {
+          "_seconds": 1758458188,
+          "_nanoseconds": 52000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  },
+  "48": {
+    "id": "48",
+    "first_name": "Omaja",
+    "last_name": "Sastry",
+    "email": "omaja.sastry@example.com",
+    "gender": "Female",
+    "math_score": "20",
+    "physics_score": "100",
+    "chemistry_score": "38",
+    "path_time_job": "Yes",
+    "absence_days": "36",
+    "extracurricular_activities": "Yes",
+    "weekly_self_study_hours": "30",
+    "career_aspiration": "Artist",
+    "fee_paid": "96896",
+    "fee_pending": "3104",
+    "fee_due_date": "2025-04-10",
+    "debar_risk": "None",
+    "updated_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 782000000
+    },
+    "created_at": {
+      "_seconds": 1758458181,
+      "_nanoseconds": 782000000
+    },
+    "marks": {
+      "l34CssLejHZpWYWIO3ti": {
+        "id": "48",
+        "first_name": "Omaja",
+        "last_name": "Sastry",
+        "math_score": "20",
+        "physics_score": "100",
+        "chemistry_score": "38",
+        "debar_risk": "None",
+        "created_at": {
+          "_seconds": 1758458188,
+          "_nanoseconds": 118000000
+        }
+      }
+    },
+    "mentor_comments": {},
+    "reports": {},
+    "study_plans": {},
+    "counseling_sessions": {}
+  }
+}

@@ -1,0 +1,49 @@
+id,first_name,last_name,email,gender,math_score,physics_score,chemistry_score,path_time_job,absence_days,extracurricular_activities,weekly_self_study_hours,career_aspiration,fee_paid,fee_pending,fee_due_date,debar_risk
+1,Yutika,Sagar,yutika.sagar@example.com,Female,26,97,74,Yes,51,Yes,15,Doctor,56130,43870,2025-07-18,Low Attendance
+2,Charles,Barad,charles.barad@example.com,Male,92,27,100,Yes,61,No,1,Artist,95088,4912,2025-06-26,Low Attendance
+3,Pranav,Bala,pranav.bala@example.com,Male,93,22,55,No,74,No,30,Teacher,26264,73736,2025-05-23,"Low Attendance, Fee Default, Admin Debar"
+4,Joshua,Batra,joshua.batra@example.com,Female,43,32,66,No,74,Yes,15,Teacher,65516,34484,2025-05-15,Low Attendance
+5,Bhavna,Nadig,bhavna.nadig@example.com,Male,36,52,58,Yes,48,No,21,Entrepreneur,81664,18336,2025-12-18,Low Attendance
+6,Indali,Hayre,indali.hayre@example.com,Female,90,99,42,Yes,51,No,17,Doctor,52511,47489,2025-05-31,Low Attendance
+7,Bakhshi,Memon,bakhshi.memon@example.com,Male,24,36,27,Yes,34,No,21,Doctor,30998,69002,2025-08-21,"Low Average Marks, Multiple Failures, Fee Default"
+8,Faris,Jayaraman,faris.jayaraman@example.com,Female,32,8,36,No,62,Yes,26,Entrepreneur,75253,24747,2025-06-03,"Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo"
+9,Prisha,Merchant,prisha.merchant@example.com,Male,26,20,21,Yes,69,No,21,Teacher,61087,38913,2025-08-06,"Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo"
+10,Megha,Tiwari,megha.tiwari@example.com,Male,30,36,34,Yes,51,No,16,Scientist,36239,63761,2025-09-29,"Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo"
+11,Robert,Luthra,robert.luthra@example.com,Female,13,31,30,No,48,Yes,2,Doctor,54021,45979,2025-11-16,"Low Attendance, Low Average Marks, Multiple Failures, Low Study + Low Marks, High Risk Combo"
+12,Maanas,Bath,maanas.bath@example.com,Female,27,31,19,No,31,Yes,5,Scientist,34734,65266,2025-10-08,"Low Average Marks, Multiple Failures, Low Study + Low Marks"
+13,Om,Pant,om.pant@example.com,Male,40,23,77,No,33,Yes,27,Scientist,82500,17500,2025-07-31,Multiple Failures
+14,Madhavi,Nazareth,madhavi.nazareth@example.com,Male,18,23,93,No,23,No,13,Engineer,38454,61546,2025-05-04,"Multiple Failures, Fee Default"
+15,Laksh,Pillay,laksh.pillay@example.com,Male,19,18,76,Yes,26,No,11,Engineer,84257,15743,2025-11-05,Multiple Failures
+16,Teerth,Mangal,teerth.mangal@example.com,Male,23,24,35,Yes,50,Yes,7,Artist,31718,68282,2025-07-03,"Low Attendance, Low Average Marks, Multiple Failures, Fee Default, High Risk Combo, Admin Debar"
+17,Oliver,Mane,oliver.mane@example.com,Female,26,25,32,No,42,No,24,Teacher,54080,45920,2025-06-29,"Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo"
+18,Vanya,Ganguly,vanya.ganguly@example.com,Male,26,31,19,Yes,30,Yes,5,Teacher,50406,49594,2025-11-11,"Low Average Marks, Multiple Failures, Low Study + Low Marks"
+19,Vamakshi,Varkey,vamakshi.varkey@example.com,Male,16,30,42,Yes,30,No,0,Scientist,24423,75577,2025-05-17,"Low Average Marks, Multiple Failures, Low Study + Low Marks, Fee Default"
+20,Pranav,Ravi,pranav.ravi@example.com,Female,21,29,38,No,62,Yes,1,Scientist,49164,50836,2025-10-13,"Low Attendance, Low Average Marks, Multiple Failures, Low Study + Low Marks, High Risk Combo"
+21,Gautam,Maharaj,gautam.maharaj@example.com,Female,33,23,25,No,52,Yes,0,Teacher,47072,52928,2025-03-21,"Low Attendance, Low Average Marks, Multiple Failures, Low Study + Low Marks, Fee Default, High Risk Combo, Admin Debar"
+22,Ishwar,Singhal,ishwar.singhal@example.com,Male,36,36,20,No,29,No,0,Entrepreneur,84396,15604,2025-10-08,"Low Average Marks, Multiple Failures, Low Study + Low Marks"
+23,Mitesh,Chander,mitesh.chander@example.com,Male,15,28,32,No,62,Yes,1,Engineer,88549,11451,2025-06-02,"Low Attendance, Low Average Marks, Multiple Failures, Low Study + Low Marks, High Risk Combo"
+24,Radha,Sinha,radha.sinha@example.com,Male,47,40,31,No,0,No,2,Teacher,99796,204,2025-11-24,Low Study + Low Marks
+25,Girik,Grover,girik.grover@example.com,Male,39,56,33,No,73,Yes,14,Engineer,28985,71015,2025-06-08,"Low Attendance, Fee Default, Admin Debar"
+26,Qarin,Sastry,qarin.sastry@example.com,Male,20,68,50,Yes,20,No,24,Artist,27309,72691,2025-08-14,Fee Default
+27,Gaurika,Sengupta,gaurika.sengupta@example.com,Male,28,32,84,No,56,Yes,21,Scientist,37442,62558,2025-06-04,"Low Attendance, Multiple Failures, Fee Default, Admin Debar"
+28,Benjamin,Kaul,benjamin.kaul@example.com,Male,21,22,95,No,1,Yes,18,Doctor,26431,73569,2025-06-29,"Multiple Failures, Fee Default"
+29,Damini,Anne,damini.anne@example.com,Male,91,34,29,Yes,80,No,11,Engineer,24209,75791,2025-04-07,"Low Attendance, Fee Default, Admin Debar"
+30,Faqid,Contractor,faqid.contractor@example.com,Female,64,56,65,No,14,No,1,Entrepreneur,39249,60751,2025-07-20,Fee Default
+31,Amara,Walia,amara.walia@example.com,Male,21,19,21,No,53,No,24,Doctor,95082,4918,2025-03-20,"Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo"
+32,Wahab,Lalla,wahab.lalla@example.com,Female,36,26,17,No,70,No,27,Artist,62076,37924,2025-03-27,"Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo"
+33,Chanchal,Mohanty,chanchal.mohanty@example.com,Male,30,19,26,No,55,No,7,Scientist,73892,26108,2025-04-05,"Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo"
+34,Megha,Chatterjee,megha.chatterjee@example.com,Male,40,29,30,Yes,70,Yes,13,Teacher,67896,32104,2025-10-16,"Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo"
+35,David,Varty,david.varty@example.com,Female,38,15,25,Yes,74,Yes,23,Teacher,30238,69762,2025-03-27,"Low Attendance, Low Average Marks, Multiple Failures, Fee Default, High Risk Combo, Admin Debar"
+36,Odika,Nagy,odika.nagy@example.com,Male,37,35,20,Yes,75,No,9,Entrepreneur,59375,40625,2025-08-08,"Low Attendance, Low Average Marks, Multiple Failures, High Risk Combo"
+37,Madhav,Dhingra,madhav.dhingra@example.com,Male,91,54,64,Yes,72,No,0,Teacher,21210,78790,2025-06-05,"Low Attendance, Fee Default, Admin Debar"
+38,Rishi,Ratti,rishi.ratti@example.com,Male,63,48,51,Yes,76,No,18,Doctor,22450,77550,2025-09-16,"Low Attendance, Fee Default, Admin Debar"
+39,Quincy,Raval,quincy.raval@example.com,Male,31,83,37,No,77,Yes,12,Scientist,37230,62770,2025-05-20,"Low Attendance, Fee Default, Admin Debar"
+40,Siya,Minhas,siya.minhas@example.com,Male,44,38,93,Yes,76,No,20,Entrepreneur,38606,61394,2025-07-18,"Low Attendance, Fee Default, Admin Debar"
+41,Aashi,Dara,aashi.dara@example.com,Female,16,46,46,No,59,No,5,Artist,33210,66790,2025-07-03,"Low Attendance, Fee Default, Admin Debar"
+42,Priya,Iyengar,priya.iyengar@example.com,Female,56,100,100,Yes,66,No,23,Engineer,23138,76862,2025-09-16,"Low Attendance, Fee Default, Admin Debar"
+43,Pushti,Behl,pushti.behl@example.com,Female,58,79,62,No,9,No,28,Doctor,95204,4796,2025-06-14,None
+44,Nandini,Zacharia,nandini.zacharia@example.com,Male,78,79,75,No,20,Yes,3,Doctor,20546,79454,2025-06-06,Fee Default
+45,Max,Sen,max.sen@example.com,Female,84,74,36,No,21,Yes,4,Artist,31894,68106,2025-06-20,Fee Default
+46,Bina,Nanda,bina.nanda@example.com,Female,72,35,44,No,7,Yes,1,Engineer,34506,65494,2025-10-07,None
+47,Frado,Lalla,frado.lalla@example.com,Female,67,60,92,Yes,52,Yes,0,Teacher,84912,15088,2025-10-20,Low Attendance
+48,Omaja,Sastry,omaja.sastry@example.com,Female,20,100,38,Yes,36,Yes,30,Artist,96896,3104,2025-04-10,None

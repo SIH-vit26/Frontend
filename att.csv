@@ -1,0 +1,4 @@
+id,first_name,last_name,absence_days,extracurricular_activities,debar_risk
+1,Yutika,Sagar,55,No,Low Attendance
+2,Charles,Barad,60,Yes,High Attendance
+3,Pranav,Bala,59,Yes,Low Attendance

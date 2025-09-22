@@ -22,6 +22,7 @@ import {
   Award,
   Target,
   Zap,
+  User,
 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ChatBot } from "@/components/chat/chat-bot"
@@ -96,6 +97,14 @@ export default function HomePage() {
     }
   }
 
+  const handleProfileClick = () => {
+    if (isAuthenticated) {
+      router.push("/profile")
+    } else {
+      router.push("/login")
+    }
+  }
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
@@ -141,6 +150,13 @@ export default function HomePage() {
             </motion.div>
 
             <div className="flex items-center space-x-4">
+              {isAuthenticated && (
+                <Button variant="ghost" size="icon" onClick={handleProfileClick} title="Profile">
+                  <User className="h-4 w-4" />
+                  <span className="sr-only">Profile</span>
+                </Button>
+              )}
+              
               <Button
                 onClick={handleGetStarted}
                 className="bg-gradient-to-r from-indigo-600 to-emerald-600 hover:from-indigo-700 hover:to-emerald-700"

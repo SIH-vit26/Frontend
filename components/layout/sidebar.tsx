@@ -14,12 +14,10 @@ import {
   Shield,
   HelpCircle,
   GraduationCap,
-  Home,
   BookOpen,
 } from "lucide-react"
 
 const navigation = [
-  { name: "Home", href: "/dashboard", icon: Home },
   { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
   { name: "Students", href: "/students", icon: Users },
   { name: "Study Planner", href: "/study-planner", icon: BookOpen },

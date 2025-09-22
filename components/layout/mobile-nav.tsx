@@ -80,6 +80,16 @@ export function MobileNav() {
                 <span className="text-indigo-600">({user?.role})</span>
               </div>
 
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                onClick={() => handleNavigation("/profile")} 
+                className="text-indigo-600 hover:text-indigo-700"
+                title="Profile"
+              >
+                <User className="w-5 h-5" />
+              </Button>
+
               <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)} className="relative z-50">
                 {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
               </Button>

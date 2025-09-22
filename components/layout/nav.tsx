@@ -21,12 +21,23 @@ import { useAuthStore } from "@/lib/stores/auth-store"
 export function Nav() {
   const { setTheme, theme } = useTheme()
   const [showDPDPModal, setShowDPDPModal] = useState(false)
+  const [dropdownOpen, setDropdownOpen] = useState(false)
   const { user, logout } = useAuthStore()
   const router = useRouter()
 
   const handleLogout = () => {
     logout()
     router.push("/login")
+  }
+
+  const handleProfileClick = () => {
+    setDropdownOpen(false)
+    if (user) {
+      router.push("/profile")
+    } else {
+      // If no user, redirect to login
+      router.push("/login")
+    }
   }
 
   return (
@@ -48,29 +59,32 @@ export function Nav() {
             <span className="sr-only">DPDP Privacy</span>
           </Button>
 
-          <DropdownMenu>
+          <Button variant="ghost" size="icon" onClick={handleProfileClick} title="Profile">
+            <User className="h-4 w-4" />
+            <span className="sr-only">Profile</span>
+          </Button>
+
+          <DropdownMenu open={dropdownOpen} onOpenChange={setDropdownOpen}>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" className="relative h-8 w-8 rounded-full">
+              <Button variant="ghost" className="relative h-8 w-8 rounded-full hover:ring-2 hover:ring-primary/20 transition-all">
                 <Avatar className="h-8 w-8">
-                  <AvatarImage src={`/avatars/${user?.role}.png`} alt={user?.name} />
-                  <AvatarFallback>{user?.role === "admin" ? "AD" : "MT"}</AvatarFallback>
+                  <AvatarImage src={`/avatars/${user?.role}.png`} alt={user?.name || "User"} />
+                  <AvatarFallback>{user?.role === "admin" ? "AD" : user?.role === "mentor" ? "MT" : "U"}</AvatarFallback>
                 </Avatar>
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56" align="end" forceMount>
               <DropdownMenuLabel className="font-normal">
                 <div className="flex flex-col space-y-1">
-                  <p className="text-sm font-medium leading-none">{user?.name}</p>
-                  <p className="text-xs leading-none text-muted-foreground">{user?.email}</p>
-                  <p className="text-xs leading-none text-muted-foreground capitalize">{user?.role}</p>
+                  <p className="text-sm font-medium leading-none">{user?.name || "Guest User"}</p>
+                  <p className="text-xs leading-none text-muted-foreground">{user?.email || "No email"}</p>
+                  <p className="text-xs leading-none text-muted-foreground capitalize">{user?.role || "guest"}</p>
                 </div>
               </DropdownMenuLabel>
               <DropdownMenuSeparator />
-              <DropdownMenuItem asChild>
-                <Link href="/profile" className="flex items-center">
-                  <User className="mr-2 h-4 w-4" />
-                  <span>Profile</span>
-                </Link>
+              <DropdownMenuItem onClick={handleProfileClick}>
+                <User className="mr-2 h-4 w-4" />
+                <span>Profile</span>
               </DropdownMenuItem>
               <DropdownMenuItem onClick={handleLogout}>
                 <LogOut className="mr-2 h-4 w-4" />

@@ -131,31 +131,31 @@ export default function StudyPlannerPage() {
   const getStatusColor = (status: StudyPlan["status"]) => {
     switch (status) {
       case "sent":
-        return "bg-green-100 text-green-800"
+        return "bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-400"
       case "pending":
-        return "bg-yellow-100 text-yellow-800"
+        return "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/20 dark:text-yellow-400"
       case "failed":
-        return "bg-red-100 text-red-800"
+        return "bg-red-100 text-red-800 dark:bg-red-900/20 dark:text-red-400"
     }
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-emerald-50">
+    <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/20 dark:from-background dark:via-background dark:to-muted/10">
       {/* Header */}
-      <div className="bg-white/80 backdrop-blur-md border-b border-indigo-100 sticky top-0 z-40">
+      <div className="bg-card/80 backdrop-blur-md border-b sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
               <Button
                 variant="ghost"
                 onClick={() => window.history.back()}
-                className="text-indigo-600 hover:text-indigo-700"
+                className="text-primary hover:text-primary/80"
               >
                 <GraduationCap className="w-5 h-5 mr-2" />
                 EduEWS
               </Button>
-              <div className="h-6 w-px bg-indigo-200"></div>
-              <h1 className="text-2xl font-bold text-gray-900">Study Planner</h1>
+              <div className="h-6 w-px bg-border"></div>
+              <h1 className="text-2xl font-bold text-foreground">Study Planner</h1>
             </div>
           </div>
         </div>
@@ -165,20 +165,20 @@ export default function StudyPlannerPage() {
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Send Study Plan Form */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm">
-              <CardHeader className="bg-gradient-to-r from-indigo-600 to-emerald-600 text-white rounded-t-lg">
+            <Card className="shadow-xl border-0 bg-card/80 backdrop-blur-sm">
+              <CardHeader className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground rounded-t-lg">
                 <CardTitle className="flex items-center gap-2">
-                  <Send className="w-5 h-5" />
+                  <Send className="w-5 h-12" />
                   Send Study Plan to Parent
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-6 space-y-6">
                 <div className="space-y-2">
-                  <Label htmlFor="parentEmail" className="text-sm font-medium text-gray-700">
+                  <Label htmlFor="parentEmail" className="text-sm font-medium text-foreground">
                     Parent's Gmail Address
                   </Label>
                   <div className="relative">
-                    <Mail className="absolute left-3 top-3 w-4 h-4 text-gray-400" />
+                    <Mail className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
                     <Input
                       id="parentEmail"
                       type="email"
@@ -191,11 +191,11 @@ export default function StudyPlannerPage() {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="subject" className="text-sm font-medium text-gray-700">
+                  <Label htmlFor="subject" className="text-sm font-medium text-foreground">
                     Subject
                   </Label>
                   <div className="relative">
-                    <BookOpen className="absolute left-3 top-3 w-4 h-4 text-gray-400" />
+                    <BookOpen className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
                     <Input
                       id="subject"
                       placeholder="Study Plan - Week 1"
@@ -207,7 +207,7 @@ export default function StudyPlannerPage() {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="message" className="text-sm font-medium text-gray-700">
+                  <Label htmlFor="message" className="text-sm font-medium text-foreground">
                     Study Plan Details
                   </Label>
                   <Textarea
@@ -223,11 +223,11 @@ export default function StudyPlannerPage() {
                 <Button
                   onClick={handleSendPlan}
                   disabled={isLoading}
-                  className="w-full bg-gradient-to-r from-indigo-600 to-emerald-600 hover:from-indigo-700 hover:to-emerald-700"
+                  className="w-full bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70"
                 >
                   {isLoading ? (
                     <>
-                      <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin mr-2"></div>
+                      <div className="w-4 h-4 border-2 border-primary-foreground border-t-transparent rounded-full animate-spin mr-2"></div>
                       Sending...
                     </>
                   ) : (
@@ -243,9 +243,9 @@ export default function StudyPlannerPage() {
 
           {/* Study Plan History */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
-            <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm">
+            <Card className="shadow-xl border-0 bg-card/80 backdrop-blur-sm">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-gray-900">
+                <CardTitle className="flex items-center gap-2 text-foreground">
                   <Calendar className="w-5 h-5" />
                   Recent Study Plans
                 </CardTitle>
@@ -258,17 +258,17 @@ export default function StudyPlannerPage() {
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: index * 0.1 }}
-                      className="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow"
+                      className="p-4 border border-border rounded-lg hover:shadow-md transition-shadow bg-card"
                     >
                       <div className="flex items-start justify-between mb-2">
-                        <h4 className="font-medium text-gray-900">{plan.subject}</h4>
+                        <h4 className="font-medium text-foreground">{plan.subject}</h4>
                         <div className="flex items-center gap-2">
                           {getStatusIcon(plan.status)}
                           <Badge className={getStatusColor(plan.status)}>{plan.status}</Badge>
                         </div>
                       </div>
 
-                      <div className="text-sm text-gray-600 mb-2">
+                      <div className="text-sm text-muted-foreground mb-2">
                         <div className="flex items-center gap-1 mb-1">
                           <Mail className="w-3 h-3" />
                           To: {plan.parentEmail}
@@ -279,7 +279,7 @@ export default function StudyPlannerPage() {
                         </div>
                       </div>
 
-                      <p className="text-sm text-gray-700 line-clamp-2">{plan.message}</p>
+                      <p className="text-sm text-foreground/80 line-clamp-2">{plan.message}</p>
                     </motion.div>
                   ))}
                 </div>
@@ -296,24 +296,24 @@ export default function StudyPlannerPage() {
           className="mt-8"
         >
           <div className="grid md:grid-cols-3 gap-6">
-            <Card className="text-center p-6 bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200">
-              <Users className="w-8 h-8 text-blue-600 mx-auto mb-2" />
-              <div className="text-2xl font-bold text-blue-600">{studyPlans.length}</div>
-              <div className="text-sm text-blue-600">Total Plans Sent</div>
+            <Card className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950/50 dark:to-blue-900/50 border-blue-200 dark:border-blue-800">
+              <Users className="w-8 h-8 text-blue-600 dark:text-blue-400 mx-auto mb-2" />
+              <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">{studyPlans.length}</div>
+              <div className="text-sm text-blue-600 dark:text-blue-400">Total Plans Sent</div>
             </Card>
 
-            <Card className="text-center p-6 bg-gradient-to-br from-green-50 to-emerald-50 border-green-200">
-              <CheckCircle className="w-8 h-8 text-green-600 mx-auto mb-2" />
-              <div className="text-2xl font-bold text-green-600">
+            <Card className="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 dark:from-green-950/50 dark:to-green-900/50 border-green-200 dark:border-green-800">
+              <CheckCircle className="w-8 h-8 text-green-600 dark:text-green-400 mx-auto mb-2" />
+              <div className="text-2xl font-bold text-green-600 dark:text-green-400">
                 {studyPlans.filter((p) => p.status === "sent").length}
               </div>
-              <div className="text-sm text-green-600">Successfully Delivered</div>
+              <div className="text-sm text-green-600 dark:text-green-400">Successfully Delivered</div>
             </Card>
 
-            <Card className="text-center p-6 bg-gradient-to-br from-purple-50 to-violet-50 border-purple-200">
-              <BookOpen className="w-8 h-8 text-purple-600 mx-auto mb-2" />
-              <div className="text-2xl font-bold text-purple-600">98%</div>
-              <div className="text-sm text-purple-600">Delivery Success Rate</div>
+            <Card className="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-950/50 dark:to-purple-900/50 border-purple-200 dark:border-purple-800">
+              <BookOpen className="w-8 h-8 text-purple-600 dark:text-purple-400 mx-auto mb-2" />
+              <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">98%</div>
+              <div className="text-sm text-purple-600 dark:text-purple-400">Delivery Success Rate</div>
             </Card>
           </div>
         </motion.div>
